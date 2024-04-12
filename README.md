@@ -20,8 +20,15 @@
 ```sh
 └── Presidio-GenSpark/
     ├── Day-1
-    │   ├── file1.txt
-    │   └── file2.txt
+    │   ├── longest-valid-parentheses
+    │   │   ├── README.md
+    │   │   └── longest-valid-parentheses.cpp
+    │   ├── palindrome-number
+    │   │   ├── README.md
+    │   │   └── palindrome-number.cpp
+    │   └── two-sum
+    │       ├── README.md
+    │       └── two-sum.cpp
     ├── Day-2
     │   └── pull_req.txt
     ├── Day-3
@@ -50,4 +57,3 @@
     │   └── Results.docx
     └── README.md
 ```
-
