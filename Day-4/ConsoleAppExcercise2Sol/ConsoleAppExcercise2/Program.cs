@@ -1,12 +1,25 @@
 ﻿namespace ConsoleAppExcercise2
 {
+    /// <summary>
+    /// Contains methods for validating and verifying car numbers.
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// Checks if the provided car number is valid.
+        /// </summary>
+        /// <param name="carNumber">The car number to validate.</param>
+        /// <returns>True if the car number is valid; otherwise, false.</returns>
         static bool IsValidCarNumber(string carNumber)
         {
             return carNumber.Length == 16 && IsNumeric(carNumber);
         }
 
+        /// <summary>
+        /// Checks if the provided string consists only of numeric characters.
+        /// </summary>
+        /// <param name="value">The string to check.</param>
+        /// <returns>True if the string consists only of numeric characters; otherwise, false.</returns>
         static bool IsNumeric(string value)
         {
             foreach (char c in value)
@@ -19,6 +32,11 @@
             return true;
         }
 
+        /// <summary>
+        /// Calculates the checksum of the provided car number.
+        /// </summary>
+        /// <param name="carNumber">The car number for which to calculate the checksum.</param>
+        /// <returns>The calculated checksum.</returns>
         static int CalculateChecksum(string carNumber)
         {
             int sum = 0;
@@ -38,6 +56,11 @@
             return sum;
         }
 
+        /// <summary>
+        /// Verifies if the provided car number is valid by checking its checksum.
+        /// </summary>
+        /// <param name="carNumber">The car number to verify.</param>
+        /// <returns>True if the car number is valid; otherwise, false.</returns>
         static bool VerifyCarNumber(string carNumber)
         {
             return CalculateChecksum(carNumber) % 10 == 0;
