@@ -105,6 +105,9 @@ namespace RequestTrackerApp
             } while (i > 0);
         }
 
+        /// <summary>
+        /// method for understanding array and finding the repeating numbers.
+        /// </summary>
         void UnderstandingArray()
         {
             int[] numbers = { 20, 67, 90, 77, 66, 68 };
@@ -120,7 +123,9 @@ namespace RequestTrackerApp
             Console.WriteLine("The numbe rof repeating numbers is " + countOfRepeatingNumbers);
         }
 
-
+        /// <summary>
+        /// method for finding the elements having same three digits.
+        /// </summary>
         void ElementsHavingSameThreeDigits()
         {
             int[] numbers = { 123, 456, 789, 234, 111, 890, 345, 777, 901 };
