@@ -14,6 +14,8 @@ namespace RequestTrackerApplication
             Console.WriteLine("1. Add Employee");
             Console.WriteLine("2. Print Employees");
             Console.WriteLine("3. Search Employee by ID");
+            Console.WriteLine("4. Update Employee Name");
+            Console.WriteLine("5. Delete Employee data");
             Console.WriteLine("0. Exit");
         }
         void EmployeeInteraction()
@@ -37,6 +39,12 @@ namespace RequestTrackerApplication
                         break;
                     case 3:
                         SearchAndPrintEmployee();
+                        break;
+                    case 4:
+                        UpdateEmployeeName();
+                        break;
+                    case 5:
+                        deleteEmployee();
                         break;
                     default:
                         Console.WriteLine("Invalid choice. Try again");
@@ -62,16 +70,17 @@ namespace RequestTrackerApplication
         }
         void PrintAllEmployees()
         {
-            if (employees[0] == null)
-            {
-                Console.WriteLine("No Employees available");
-                return;
-            }
+            int count = 0;
             for (int i = 0; i < employees.Length; i++)
             {
                 if (employees[i] != null)
+                {
                     PrintEmployee(employees[i]);
+                    count++;
+                }
             }
+            if (count == 0)
+                Console.WriteLine("No employees to display");
         }
         Employee CreateEmployee(int id)
         {
@@ -109,7 +118,6 @@ namespace RequestTrackerApplication
             Employee employee = null;
             for (int i = 0; i < employees.Length; i++)
             {
-                // if ( employees[i].Id == id && employees[i] != null)//Will lead to exception
                 if (employees[i] != null && employees[i].Id == id)
                 {
                     employee = employees[i];
@@ -117,6 +125,41 @@ namespace RequestTrackerApplication
                 }
             }
             return employee;
+        }
+
+        void UpdateEmployeeName()
+        {
+            int id = GetIdFromConsole();
+            Employee employee = SearchEmployeeById(id);
+            if (employee == null)
+            {
+                Console.WriteLine("No such Employee is present");
+                return;
+            }
+            Console.WriteLine("Please enter the new name");
+            employee.Name = Console.ReadLine() ?? string.Empty;
+            Console.WriteLine("Employee name updated successfully");
+        }
+
+        void deleteEmployee()
+        {
+            int id = GetIdFromConsole();
+            Employee employee = SearchEmployeeById(id);
+            if (employee == null)
+            {
+                Console.WriteLine("No such Employee is present");
+                return;
+            }
+            for (int i = 0; i < employees.Length; i++)
+            {
+                if (employees[i] != null && employees[i].Id == id)
+                {
+                    employees[i] = null;
+                    Console.WriteLine("Employee data deleted successfully");
+                    break;
+                }
+            }
+
         }
 
 
