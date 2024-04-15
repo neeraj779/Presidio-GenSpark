@@ -1,4 +1,4 @@
-﻿namespace ConsoleAppExcercise2
+﻿namespace VerifyCarNumber
 {
     /// <summary>
     /// Contains methods for validating and verifying car numbers.

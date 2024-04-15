@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppExcercise2", "ConsoleAppExcercise2\ConsoleAppExcercise2.csproj", "{7F81A5B0-6338-4AA7-815D-5F7DC3C44B6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifyCarNumberApp", "VerifyCarNumberApp\VerifyCarNumberApp.csproj", "{781EDC6E-D2AB-4B0E-8143-DFBF4675F68F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F81A5B0-6338-4AA7-815D-5F7DC3C44B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F81A5B0-6338-4AA7-815D-5F7DC3C44B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F81A5B0-6338-4AA7-815D-5F7DC3C44B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F81A5B0-6338-4AA7-815D-5F7DC3C44B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781EDC6E-D2AB-4B0E-8143-DFBF4675F68F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781EDC6E-D2AB-4B0E-8143-DFBF4675F68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781EDC6E-D2AB-4B0E-8143-DFBF4675F68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781EDC6E-D2AB-4B0E-8143-DFBF4675F68F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {48298CA4-51C9-43C1-8C05-E9169E20CEDB}
+		SolutionGuid = {997181D6-B3BB-45BE-A24B-E3736967D2F8}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,6 @@
-﻿using ConsoleAppExercise.Models;
+﻿using DoctorManagementSystemApp.Models;
 
-namespace ConsoleAppExercise
+namespace DoctorManagementSystemApp
 {
     internal class Program
     {
@@ -10,7 +10,7 @@ namespace ConsoleAppExercise
         /// </summary>
         /// <param name="id">The id of the doctor.</param>
         /// <returns>The newly created doctor instance.</returns>
-        public static Doctor CreateDoctorByTakingDetailsFromConsole(int id)
+        Doctor CreateDoctorByTakingDetailsFromConsole(int id)
         {
             Console.WriteLine("Please enter the doctor's name:");
             string name;
@@ -59,8 +59,29 @@ namespace ConsoleAppExercise
 
             return new Doctor(id, name, age, experience, qualification, speciality);
         }
+
+        void SearchDoctorsBySpecialty(Doctor[] doctors, string specialty)
+        {
+            bool found = false;
+            Console.WriteLine($"Doctors with specialty '{specialty}':");
+            foreach (Doctor doctor in doctors)
+            {
+                if (doctor.Speciality.ToLower() == specialty.ToLower())
+                {
+                    doctor.PrintDetails();
+                    found = true;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine($"No doctors found with specialty '{specialty}'.");
+            }
+        }
         static void Main(string[] args)
         {
+            Program program = new Program();
+
             Console.WriteLine("How many doctors do you want to save?");
             int numberOfDoctors;
             while (!int.TryParse(Console.ReadLine(), out numberOfDoctors) || numberOfDoctors <= 0)
@@ -70,9 +91,9 @@ namespace ConsoleAppExercise
 
             Doctor[] doctors = new Doctor[numberOfDoctors];
 
-            for(int i = 0; i < doctors.Length; ++i)
+            for (int i = 0; i < doctors.Length; ++i)
             {
-                doctors[i] = Program.CreateDoctorByTakingDetailsFromConsole(i);
+                doctors[i] = program.CreateDoctorByTakingDetailsFromConsole(i);
             }
 
             Console.WriteLine("List of Doctors:");
@@ -80,6 +101,10 @@ namespace ConsoleAppExercise
             {
                 doctors[i].PrintDetails();
             }
+
+            Console.WriteLine("Enter the specialty to search for:");
+            string specialtyToSearch = Console.ReadLine();
+            program.SearchDoctorsBySpecialty(doctors, specialtyToSearch);
         }
     }
 }
