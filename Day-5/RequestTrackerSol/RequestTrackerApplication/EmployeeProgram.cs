@@ -13,6 +13,7 @@ namespace RequestTrackerApplication
         {
             Console.WriteLine("1. Add Employee");
             Console.WriteLine("2. Print Employees");
+            Console.WriteLine("3. Search Employee by ID");
             Console.WriteLine("0. Exit");
         }
         void EmployeeInteraction()
@@ -33,6 +34,9 @@ namespace RequestTrackerApplication
                         break;
                     case 2:
                         PrintAllEmployees();
+                        break;
+                    case 3:
+                        SearchAndPrintEmployee();
                         break;
                     default:
                         Console.WriteLine("Invalid choice. Try again");
@@ -76,6 +80,45 @@ namespace RequestTrackerApplication
             employee.BuildEmployeeFromConsole();
             return employee;
         }
+
+        int GetIdFromConsole()
+        {
+            int id = 0;
+            Console.WriteLine("Please enter the employee Id");
+            while (!int.TryParse(Console.ReadLine(), out id))
+            {
+                Console.WriteLine("Invalid entry. Please try again");
+            }
+            return id;
+        }
+
+        void SearchAndPrintEmployee()
+        {
+            int id = GetIdFromConsole();
+            Employee employee = SearchEmployeeById(id);
+            if (employee == null)
+            {
+                Console.WriteLine("No such Employee is present");
+                return;
+            }
+            PrintEmployee(employee);
+        }
+
+        Employee SearchEmployeeById(int id)
+        {
+            Employee employee = null;
+            for (int i = 0; i < employees.Length; i++)
+            {
+                // if ( employees[i].Id == id && employees[i] != null)//Will lead to exception
+                if (employees[i] != null && employees[i].Id == id)
+                {
+                    employee = employees[i];
+                    break;
+                }
+            }
+            return employee;
+        }
+
 
         void PrintEmployee(Employee employee)
         {
