@@ -21,11 +21,11 @@
 └── Presidio-GenSpark/
     ├── Day-1
     │   ├── longest-valid-parentheses
-    │   │   ├── README.md
-    │   │   └── longest-valid-parentheses.cpp
+    │   │   ├── longest-valid-parentheses.cpp
+    │   │   └── README.md
     │   ├── palindrome-number
-    │   │   ├── README.md
-    │   │   └── palindrome-number.cpp
+    │   │   ├── palindrome-number.cpp
+    │   │   └── README.md
     │   └── two-sum
     │       ├── README.md
     │       └── two-sum.cpp
@@ -38,22 +38,36 @@
     │   │   ├── Class3.cs
     │   │   ├── Class4.cs
     │   │   ├── Class5.cs
-    │   │   └── ConsoleApp.csproj
+    │   │   ├── ConsoleApp.csproj
+    │   │   └── ConsoleApp.sln
     │   └── ConsoleAppSol.sln
     ├── Day-4
-    │   ├── ConsoleAppExcercise2Sol
-    │   │   ├── ConsoleAppExcercise2
-    │   │   │   ├── ConsoleAppExcercise2.csproj
-    │   │   │   ├── ConsoleAppExcercise2.sln
+    │   ├── DoctorManagementSystemApp
+    │   │   ├── DoctorManagementSystemApp.csproj
+    │   │   ├── DoctorManagementSystemApp.sln
+    │   │   ├── Models
+    │   │   │   └── Doctor.cs
+    │   │   └── Program.cs
+    │   ├── Results.docx
+    │   └── VerifyCarNumberApp
+    │       ├── Program.cs
+    │       ├── VerifyCarNumberApp.csproj
+    │       └── VerifyCarNumberSol.sln
+    ├── Day-5
+    │   ├── CowAndBullSol
+    │   │   ├── CowAndBullApp
+    │   │   │   ├── CowAndBullApp.csproj
+    │   │   │   ├── CowAndBullApp.sln
     │   │   │   └── Program.cs
-    │   │   └── ConsoleAppExcercise2Sol.sln
-    │   ├── ConsoleAppExerciseSol
-    │   │   ├── ConsoleAppExercise
-    │   │   │   ├── ConsoleAppExercise.csproj
-    │   │   │   ├── Models
-    │   │   │   │   └── Doctor.cs
-    │   │   │   └── Program.cs
-    │   │   └── ConsoleAppExerciseSol.sln
-    │   └── Results.docx
+    │   │   └── CowAndBullSol.sln
+    │   └── RequestTrackerSol
+    │       ├── RequestTrackerApplication
+    │       │   ├── EmployeeProgram.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApplication.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── Employee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
     └── README.md
 ```
