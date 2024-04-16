@@ -17,15 +17,16 @@
 
 ## 📂 Repository Structure
 
+
 ```sh
 └── Presidio-GenSpark/
     ├── Day-1
     │   ├── longest-valid-parentheses
-    │   │   ├── longest-valid-parentheses.cpp
-    │   │   └── README.md
+    │   │   ├── README.md
+    │   │   └── longest-valid-parentheses.cpp
     │   ├── palindrome-number
-    │   │   ├── palindrome-number.cpp
-    │   │   └── README.md
+    │   │   ├── README.md
+    │   │   └── palindrome-number.cpp
     │   └── two-sum
     │       ├── README.md
     │       └── two-sum.cpp
@@ -38,8 +39,7 @@
     │   │   ├── Class3.cs
     │   │   ├── Class4.cs
     │   │   ├── Class5.cs
-    │   │   ├── ConsoleApp.csproj
-    │   │   └── ConsoleApp.sln
+    │   │   └── ConsoleApp.csproj
     │   └── ConsoleAppSol.sln
     ├── Day-4
     │   ├── DoctorManagementSystemApp
@@ -61,8 +61,8 @@
     │   │   │   └── Program.cs
     │   │   └── CowAndBullSol.sln
     │   ├── LeetCode
-    │   │   ├── bulls_and_cows.cs
-    │   │   └── README.md
+    │   │   ├── README.md
+    │   │   └── bulls_and_cows.cs
     │   └── RequestTrackerSol
     │       ├── RequestTrackerApplication
     │       │   ├── EmployeeProgram.cs
@@ -70,6 +70,33 @@
     │       │   └── RequestTrackerApplication.csproj
     │       ├── RequestTrackerModelLibrary
     │       │   ├── Employee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
+    ├── Day-6
+    │   ├── GovtRules
+    │   │   ├── GovtRulesApp
+    │   │   │   ├── GovtRulesApp.csproj
+    │   │   │   └── Program.cs
+    │   │   ├── GovtRulesModelLibrary
+    │   │   │   ├── ABC.cs
+    │   │   │   ├── Company.cs
+    │   │   │   ├── GovtRulesModelLibrary.csproj
+    │   │   │   ├── IGovtRules.cs
+    │   │   │   └── XYZ.cs
+    │   │   ├── GovtRulesSol.sln
+    │   │   └── Output.png
+    │   └── RequestTracker
+    │       ├── RequestTrackerApplication
+    │       │   ├── Company.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApplication.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── ContractEmployee.cs
+    │       │   ├── Department.cs
+    │       │   ├── Employee.cs
+    │       │   ├── IClientInteraction.cs
+    │       │   ├── IInternalCompanyWorking.cs
+    │       │   ├── PermanentEmployee.cs
     │       │   └── RequestTrackerModelLibrary.csproj
     │       └── RequestTrackerSol.sln
     └── README.md
