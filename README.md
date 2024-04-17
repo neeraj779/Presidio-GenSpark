@@ -99,5 +99,28 @@
     │       │   ├── PermanentEmployee.cs
     │       │   └── RequestTrackerModelLibrary.csproj
     │       └── RequestTrackerSol.sln
+    ├── Day-7
+    │   └── ClinicAppointmentManagementSol
+    │       ├── ClinicAppointmentManagementApp
+    │       │   ├── ClinicAppointmentManagementApp.csproj
+    │       │   └── Program.cs
+    │       ├── ClinicAppointmentManagementBLLibrary
+    │       │   ├── ClinicAppointmentManagementBLLibrary.csproj
+    │       │   ├── IAppointmentService.cs
+    │       │   ├── IDoctorService.cs
+    │       │   └── IPatientService.cs
+    │       ├── ClinicAppointmentManagementDLLibrary
+    │       │   ├── AppointmentRepo.cs
+    │       │   ├── ClinicAppointmentManagementDLLibrary.csproj
+    │       │   ├── DoctorRepo.cs
+    │       │   ├── IRepo.cs
+    │       │   └── PatientRepo.cs
+    │       ├── ClinicAppointmentManagementSol.sln
+    │       └── ModelLibrary
+    │           ├── Appointment.cs
+    │           ├── Doctor.cs
+    │           ├── ModelLibrary.csproj
+    │           └── Patient.cs
     └── README.md
 ```
+
