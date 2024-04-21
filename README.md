@@ -122,5 +122,35 @@
     │           ├── Doctor.cs
     │           ├── ModelLibrary.csproj
     │           └── Patient.cs
+    ├── Day-8
+    │   └── RequestTracker
+    │       ├── RequestTrackerApp
+    │       │   ├── Company.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApp.csproj
+    │       ├── RequestTrackerBLLibrary
+    │       │   ├── DepartmentBL.cs
+    │       │   ├── DupDeptNameException.cs
+    │       │   ├── DupEmpNameException.cs
+    │       │   ├── EmpNotExistException.cs
+    │       │   ├── EmployeeBL.cs
+    │       │   ├── IDepartmentService.cs
+    │       │   ├── IEmployeeService.cs
+    │       │   ├── RequestTrackerBLLibrary.csproj
+    │       │   └── VoidDepartmentException.cs
+    │       ├── RequestTrackerDALibrary
+    │       │   ├── DepartmentRepo.cs
+    │       │   ├── EmployeeRepo.cs
+    │       │   ├── IRepository.cs
+    │       │   └── RequestTrackerDALibrary.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── ContractEmployee.cs
+    │       │   ├── Department.cs
+    │       │   ├── Employee.cs
+    │       │   ├── IClientInteraction.cs
+    │       │   ├── IInternalCompanyWorking.cs
+    │       │   ├── PermanentEmployee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
     └── README.md
 ```
