@@ -1,0 +1,35 @@
+name: Update Directory Structure in README
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+  
+      - name: Generate Directory Structure
+        run: node .github/scripts/generate_directory_structure.js  
+
+      - name: Update README
+        run: |
+          sed -i '/^```/,/^```/d' README.md
+          cat directory_structure.md >> README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.email "${{ secrets.email }}"
+          git config user.name "Neeraj"
+          git add README.md
+          git commit -m "Update directory structure in README" || exit 0
+          git push https://github.com/${{ github.repository }}.git
+          
