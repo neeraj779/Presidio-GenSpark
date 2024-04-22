@@ -11,14 +11,10 @@
 <p>
 <p align="center">
 	</p>
-<hr>
 
 ---
 
 ## 📂 Repository Structure
-
-
-
 ```
 └── Presidio-GenSpark
     ├── Day-1
