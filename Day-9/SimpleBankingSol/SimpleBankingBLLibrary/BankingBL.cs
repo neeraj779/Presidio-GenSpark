@@ -1,4 +1,5 @@
-﻿using SimpleBankingModelLibrary;
+﻿using System.Security.Cryptography;
+using SimpleBankingModelLibrary;
 using SimpleBankingDALibrary;
 
 namespace SimpleBankingBLLibrary
@@ -14,65 +15,102 @@ namespace SimpleBankingBLLibrary
             _transactionRepository = transactionRepository;
         }
 
-        public void RegisterUser(string username, double initialBalance)
+        public void RegisterUser(string username, double initialBalance, string password)
         {
             if (_userRepository.GetUserByUsername(username) != null)
                 throw new UserAlreadyExistsException();
 
-            var newUser = new User { Username = username, Balance = initialBalance };
+            byte[] salt = GenerateSalt();
+            string hashedPassword = HashPassword(password, salt);
+            var newUser = new User { Username = username, Balance = initialBalance, Password = hashedPassword };
             _userRepository.AddUser(newUser);
             Console.WriteLine("User registered successfully!");
         }
 
-        public void Deposit(string username, double amount)
+        private byte[] GenerateSalt()
+        {
+            byte[] salt = new byte[16];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(salt);
+            }
+            return salt;
+        }
+
+        private string HashPassword(string password, byte[] salt)
+        {
+            using (var pbkdf2 = new Rfc2898DeriveBytes(password, salt, iterations: 5000))
+            {
+                byte[] hash = pbkdf2.GetBytes(20);
+                byte[] hashBytes = new byte[36];
+                Buffer.BlockCopy(salt, 0, hashBytes, 0, 16);
+                Buffer.BlockCopy(hash, 0, hashBytes, 16, 20);
+                return Convert.ToBase64String(hashBytes);
+            }
+        }
+
+        public bool AuthenticateUser(string username, string password)
         {
             var user = _userRepository.GetUserByUsername(username);
             if (user == null)
-                throw new UserNotFoundException();
+                return false;
 
+            byte[] storedSalt = Convert.FromBase64String(user.Password).Take(16).ToArray();
+            string hashedPassword = HashPassword(password, storedSalt);
+            return user.Password == hashedPassword;
+        }
+
+        public void Deposit(string username, double amount)
+        {
+            var user = GetUserIfExists(username);
             user.Balance += amount;
 
-            _transactionRepository.AddTransaction(new Transaction { SenderUsername = username, ReceiverUsername = username, Amount = amount, Timestamp = DateTime.Now });
+            RecordTransaction(username, username, amount);
             Console.WriteLine($"Deposit of {amount} successful.");
         }
 
         public void Withdraw(string username, double amount)
         {
-            var user = _userRepository.GetUserByUsername(username);
-            if (user == null)
-                throw new UserNotFoundException();
-
+            var user = GetUserIfExists(username);
             if (user.Balance < amount)
                 throw new InsufficientFundsException();
 
             user.Balance -= amount;
-            _transactionRepository.AddTransaction(new Transaction { SenderUsername = username, ReceiverUsername = username, Amount = -amount, Timestamp = DateTime.Now });
+            RecordTransaction(username, username, -amount);
             Console.WriteLine($"Withdrawal of {amount} successful. New balance: {user.Balance}");
         }
 
         public void Transfer(string sender, string receiver, double amount)
         {
-            var senderUser = _userRepository.GetUserByUsername(sender);
-            var receiverUser = _userRepository.GetUserByUsername(receiver);
-
-            if (senderUser == null || receiverUser == null)
-                throw new UserNotFoundException();
+            var senderUser = GetUserIfExists(sender);
+            var receiverUser = GetUserIfExists(receiver);
 
             if (senderUser.Balance < amount)
                 throw new InsufficientFundsException();
 
             senderUser.Balance -= amount;
             receiverUser.Balance += amount;
-            _transactionRepository.AddTransaction(new Transaction { SenderUsername = sender, ReceiverUsername = receiver, Amount = amount, Timestamp = DateTime.Now });
+            RecordTransaction(sender, receiver, amount);
             Console.WriteLine($"Transfer of {amount} from {sender} to {receiver} successful.");
         }
 
-        public double CheckBalance(string username)
+        private User GetUserIfExists(string username)
         {
             var user = _userRepository.GetUserByUsername(username);
             if (user == null)
                 throw new UserNotFoundException();
-            return user?.Balance ?? -1;
+            return user;
+        }
+
+        private void RecordTransaction(string sender, string receiver, double amount)
+        {
+            _transactionRepository.AddTransaction(new Transaction { SenderUsername = sender, ReceiverUsername = receiver, Amount = amount, Timestamp = DateTime.Now });
+        }
+
+        public double CheckBalance(string username)
+        {
+            var user = GetUserIfExists(username);
+            return user.Balance;
         }
 
         public void CheckTransactionHistory(string username)

@@ -6,6 +6,8 @@ namespace SimpleBankingApp
     public class BankingMenu
     {
         private readonly IBankingServices _bankingOperations;
+        private bool _loggedIn = false;
+        private string _loggedInUsername = "";
 
         public BankingMenu(IBankingServices bankingOperations)
         {
@@ -16,49 +18,67 @@ namespace SimpleBankingApp
         {
             while (true)
             {
-                PrintMainMenu();
-                int choice = Convert.ToInt32(Console.ReadLine());
-                ProcessChoice(choice);
+                if (!_loggedIn)
+                {
+                    PrintLoginMenu();
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    ProcessLoginChoice(choice);
+                }
+                else
+                {
+                    PrintMainMenu();
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    ProcessMainChoice(choice);
+                }
                 Console.WriteLine("\nPress any key to continue...");
                 Console.ReadKey();
                 Console.Clear();
             }
         }
 
+        private void PrintLoginMenu()
+        {
+            Console.WriteLine("Welcome to Simple Banking App");
+            Console.WriteLine("1. Login");
+            Console.WriteLine("2. Register User");
+            Console.WriteLine("3. Exit");
+            Console.Write("Enter your choice: ");
+        }
+
         private void PrintMainMenu()
         {
             Console.WriteLine("Welcome to Simple Banking App");
-            Console.WriteLine("1. Register User");
-            Console.WriteLine("2. Deposit");
-            Console.WriteLine("3. Withdraw");
-            Console.WriteLine("4. Transfer");
-            Console.WriteLine("5. Check Balance");
-            Console.WriteLine("6. Check Transaction History");
+            Console.WriteLine("1. Deposit");
+            Console.WriteLine("2. Withdraw");
+            Console.WriteLine("3. Transfer");
+            Console.WriteLine("4. Check Balance");
+            Console.WriteLine("5. Check Transaction History");
+            Console.WriteLine("6. Logout");
             Console.WriteLine("7. Exit");
             Console.Write("Enter your choice: ");
         }
 
-        private void ProcessChoice(int choice)
+        private void ProcessMainChoice(int choice)
         {
             switch (choice)
             {
                 case 1:
-                    RegisterUser();
-                    break;
-                case 2:
                     Deposit();
                     break;
-                case 3:
+                case 2:
                     Withdraw();
                     break;
-                case 4:
+                case 3:
                     Transfer();
                     break;
-                case 5:
+                case 4:
                     CheckBalance();
                     break;
-                case 6:
+                case 5:
                     checkTransactionHistory();
+                    break;
+                case 6:
+                    Logout();
                     break;
                 case 7:
                     Console.WriteLine("Thankyou for using Simple Banking App.");
@@ -70,13 +90,57 @@ namespace SimpleBankingApp
             }
         }
 
+        private void ProcessLoginChoice(int choice)
+        {
+            switch (choice)
+            {
+                case 1:
+                    Login();
+                    break;
+                case 2:
+                    RegisterUser();
+                    break;
+                case 3:
+                    Console.WriteLine("Thank you for using Simple Banking App.");
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    break;
+            }
+        }
+
+        private void Login()
+        {
+            string username = ReadUsername("Enter username: ");
+            string? password = ReadPassword("Enter password: ");
+            if (_bankingOperations.AuthenticateUser(username, password))
+            {
+                Console.WriteLine("Login successful.");
+                _loggedIn = true;
+                _loggedInUsername = username;
+            }
+            else
+            {
+                Console.WriteLine("Invalid username or password. Please try again.");
+            }
+        }
+
+        private void Logout()
+        {
+            _loggedIn = false;
+            _loggedInUsername = "";
+            Console.WriteLine("Logged out successfully.");
+        }
+
         private void RegisterUser()
         {
             string username = ReadUsername("Enter username: ");
             double initialBalance = ReadPositiveDouble("Enter initial balance: ");
+            string password = ReadUsername("Enter password: ");
             try
             {
-                _bankingOperations.RegisterUser(username, initialBalance);
+                _bankingOperations.RegisterUser(username, initialBalance, password);
             }
             catch (UserAlreadyExistsException e)
             {
@@ -87,7 +151,7 @@ namespace SimpleBankingApp
 
         private void Deposit()
         {
-            string username = ReadUsername("Enter username: ");
+            string username = _loggedInUsername;
             double amount = ReadPositiveDouble("Enter amount to deposit: ");
             try
             {
@@ -102,7 +166,7 @@ namespace SimpleBankingApp
 
         private void Withdraw()
         {
-            string username = ReadUsername("Enter username: ");
+            string username = _loggedInUsername;
             double amount = ReadPositiveDouble("Enter amount to withdraw: ");
             try
             {
@@ -122,7 +186,7 @@ namespace SimpleBankingApp
 
         private void Transfer()
         {
-            string sender = ReadUsername("Enter sender username: ");
+            string sender = _loggedInUsername;
             string receiver = ReadUsername("Enter receiver username: ");
             double amount = ReadPositiveDouble("Enter amount to transfer: ");
             try
@@ -143,7 +207,7 @@ namespace SimpleBankingApp
 
         private void CheckBalance()
         {
-            string username = ReadUsername("Enter username: ");
+            string username = _loggedInUsername;
             try
             {
                 double balance = _bankingOperations.CheckBalance(username);
@@ -168,6 +232,18 @@ namespace SimpleBankingApp
             return username;
         }
 
+        private string ReadPassword(string prompt)
+        {
+            Console.Write(prompt);
+            string? password = Console.ReadLine();
+            while (string.IsNullOrWhiteSpace(password))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid password.");
+                password = Console.ReadLine();
+            }
+            return password;
+        }
+
         private double ReadPositiveDouble(string prompt)
         {
             double value;
@@ -182,7 +258,7 @@ namespace SimpleBankingApp
 
         private void checkTransactionHistory()
         {
-            string username = ReadUsername("Enter username: ");
+            string username = _loggedInUsername;
             _bankingOperations.CheckTransactionHistory(username);
         }
     }
