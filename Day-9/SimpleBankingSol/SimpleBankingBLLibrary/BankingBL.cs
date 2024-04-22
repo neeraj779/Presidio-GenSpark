@@ -43,10 +43,7 @@ namespace SimpleBankingBLLibrary
                 throw new UserNotFoundException();
 
             if (user.Balance < amount)
-            {
-                Console.WriteLine("Insufficient balance.");
-                return;
-            }
+                throw new InsufficientFundsException();
 
             user.Balance -= amount;
             _transactionRepository.AddTransaction(new Transaction { SenderUsername = username, ReceiverUsername = username, Amount = -amount, Timestamp = DateTime.Now });
@@ -62,10 +59,7 @@ namespace SimpleBankingBLLibrary
                 throw new UserNotFoundException();
 
             if (senderUser.Balance < amount)
-            {
-                Console.WriteLine("Insufficient balance.");
-                return;
-            }
+                throw new InsufficientFundsException();
 
             senderUser.Balance -= amount;
             receiverUser.Balance += amount;

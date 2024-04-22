@@ -1,5 +1,4 @@
-﻿using System;
-using SimpleBankingDALibrary;
+﻿using SimpleBankingDALibrary;
 using SimpleBankingBLLibrary;
 
 namespace SimpleBankingApp
@@ -114,6 +113,11 @@ namespace SimpleBankingApp
                 Console.WriteLine(e.Message);
                 return;
             }
+            catch (InsufficientFundsException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private void Transfer()
@@ -126,6 +130,11 @@ namespace SimpleBankingApp
                 _bankingOperations.Transfer(sender, receiver, amount);
             }
             catch (UserNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
+            catch (InsufficientFundsException e)
             {
                 Console.WriteLine(e.Message);
                 return;
