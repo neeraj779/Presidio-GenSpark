@@ -75,24 +75,45 @@ namespace SimpleBankingApp
         {
             string username = ReadUsername("Enter username: ");
             double initialBalance = ReadPositiveDouble("Enter initial balance: ");
-
-            _bankingOperations.RegisterUser(username, initialBalance);
+            try
+            {
+                _bankingOperations.RegisterUser(username, initialBalance);
+            }
+            catch (UserAlreadyExistsException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private void Deposit()
         {
             string username = ReadUsername("Enter username: ");
             double amount = ReadPositiveDouble("Enter amount to deposit: ");
-
-            _bankingOperations.Deposit(username, amount);
+            try
+            {
+                _bankingOperations.Deposit(username, amount);
+            }
+            catch (UserNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private void Withdraw()
         {
             string username = ReadUsername("Enter username: ");
             double amount = ReadPositiveDouble("Enter amount to withdraw: ");
-
-            _bankingOperations.Withdraw(username, amount);
+            try
+            {
+                _bankingOperations.Withdraw(username, amount);
+            }
+            catch (UserNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private void Transfer()
@@ -100,18 +121,30 @@ namespace SimpleBankingApp
             string sender = ReadUsername("Enter sender username: ");
             string receiver = ReadUsername("Enter receiver username: ");
             double amount = ReadPositiveDouble("Enter amount to transfer: ");
-
-            _bankingOperations.Transfer(sender, receiver, amount);
+            try
+            {
+                _bankingOperations.Transfer(sender, receiver, amount);
+            }
+            catch (UserNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private void CheckBalance()
         {
             string username = ReadUsername("Enter username: ");
-            double balance = _bankingOperations.CheckBalance(username);
-            if (balance >= 0)
+            try
+            {
+                double balance = _bankingOperations.CheckBalance(username);
                 Console.WriteLine($"Account balance for {username}: {balance}");
-            else
-                Console.WriteLine($"User {username} not found.");
+            }
+            catch (UserNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
         private string ReadUsername(string prompt)

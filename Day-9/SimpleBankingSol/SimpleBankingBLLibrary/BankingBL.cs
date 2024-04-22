@@ -17,10 +17,7 @@ namespace SimpleBankingBLLibrary
         public void RegisterUser(string username, double initialBalance)
         {
             if (_userRepository.GetUserByUsername(username) != null)
-            {
-                Console.WriteLine("Username already exists. Please choose a different one.");
-                return;
-            }
+                throw new UserAlreadyExistsException();
 
             var newUser = new User { Username = username, Balance = initialBalance };
             _userRepository.AddUser(newUser);
@@ -31,10 +28,7 @@ namespace SimpleBankingBLLibrary
         {
             var user = _userRepository.GetUserByUsername(username);
             if (user == null)
-            {
-                Console.WriteLine("User not found.");
-                return;
-            }
+                throw new UserNotFoundException();
 
             user.Balance += amount;
 
@@ -46,10 +40,7 @@ namespace SimpleBankingBLLibrary
         {
             var user = _userRepository.GetUserByUsername(username);
             if (user == null)
-            {
-                Console.WriteLine("User not found.");
-                return;
-            }
+                throw new UserNotFoundException();
 
             if (user.Balance < amount)
             {
@@ -68,10 +59,7 @@ namespace SimpleBankingBLLibrary
             var receiverUser = _userRepository.GetUserByUsername(receiver);
 
             if (senderUser == null || receiverUser == null)
-            {
-                Console.WriteLine("User not found.");
-                return;
-            }
+                throw new UserNotFoundException();
 
             if (senderUser.Balance < amount)
             {
@@ -88,6 +76,8 @@ namespace SimpleBankingBLLibrary
         public double CheckBalance(string username)
         {
             var user = _userRepository.GetUserByUsername(username);
+            if (user == null)
+                throw new UserNotFoundException();
             return user?.Balance ?? -1;
         }
 
