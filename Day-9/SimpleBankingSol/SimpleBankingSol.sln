@@ -5,6 +5,12 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBankingApp", "SimpleBankingApp\SimpleBankingApp.csproj", "{9CDA464A-1084-499E-8162-AF0A6DCE99B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBankingModelLibrary", "SimpleBankingModelLibrary\SimpleBankingModelLibrary.csproj", "{1CB3D20A-FB89-443F-A718-8FB31F47B1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBankingBLLibrary", "SimpleBankingBLLibrary\SimpleBankingBLLibrary.csproj", "{CA1B8177-48D3-4C36-8B01-AC8F409955D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBankingDALibrary", "SimpleBankingDALibrary\SimpleBankingDALibrary.csproj", "{35295782-50A7-42F5-8DCE-23344354A462}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{9CDA464A-1084-499E-8162-AF0A6DCE99B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CDA464A-1084-499E-8162-AF0A6DCE99B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CDA464A-1084-499E-8162-AF0A6DCE99B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB3D20A-FB89-443F-A718-8FB31F47B1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB3D20A-FB89-443F-A718-8FB31F47B1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB3D20A-FB89-443F-A718-8FB31F47B1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB3D20A-FB89-443F-A718-8FB31F47B1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1B8177-48D3-4C36-8B01-AC8F409955D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1B8177-48D3-4C36-8B01-AC8F409955D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1B8177-48D3-4C36-8B01-AC8F409955D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1B8177-48D3-4C36-8B01-AC8F409955D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35295782-50A7-42F5-8DCE-23344354A462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35295782-50A7-42F5-8DCE-23344354A462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35295782-50A7-42F5-8DCE-23344354A462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35295782-50A7-42F5-8DCE-23344354A462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
