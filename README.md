@@ -157,6 +157,20 @@
     │       ├── SimpleBankingApp
     │       │   ├── Program.cs
     │       │   └── SimpleBankingApp.csproj
+    │       ├── SimpleBankingBLLibrary
+    │       │   ├── BankingBL.cs
+    │       │   ├── IBankingServices.cs
+    │       │   ├── SimpleBankingBLLibrary.csproj
+    │       │   ├── UserAlreadyExistsException.cs
+    │       │   └── UserNotFoundException.cs
+    │       ├── SimpleBankingDALibrary
+    │       │   ├── BankingDAL.cs
+    │       │   ├── ITransactionRepo.cs
+    │       │   ├── IUserRepo.cs
+    │       │   └── SimpleBankingDALibrary.csproj
+    │       ├── SimpleBankingModelLibrary
+    │       │   ├── Banking.cs
+    │       │   └── SimpleBankingModelLibrary.csproj
     │       └── SimpleBankingSol.sln
     └── README.md
 ```
