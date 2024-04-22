@@ -156,6 +156,7 @@
     │       ├── SimpleBankingBLLibrary
     │       │   ├── BankingBL.cs
     │       │   ├── IBankingServices.cs
+    │       │   ├── InsufficientFundsException.cs
     │       │   ├── SimpleBankingBLLibrary.csproj
     │       │   ├── UserAlreadyExistsException.cs
     │       │   └── UserNotFoundException.cs
