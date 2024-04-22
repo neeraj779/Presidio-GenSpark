@@ -5,14 +5,7 @@
     /// </summary>
     public class User
     {
-        /// <summary>
-        /// Gets or sets the username of the user.
-        /// </summary>
-        public string Username { get; set; }
-
-        /// <summary>
-        /// Gets or sets the balance of the user's account.
-        /// </summary>
+        public string? Username { get; set; }
         public double Balance { get; set; }
     }
 
@@ -21,24 +14,9 @@
     /// </summary>
     public class Transaction
     {
-        /// <summary>
-        /// Gets or sets the username of the sender.
-        /// </summary>
-        public string SenderUsername { get; set; }
-
-        /// <summary>
-        /// Gets or sets the username of the receiver.
-        /// </summary>
-        public string ReceiverUsername { get; set; }
-
-        /// <summary>
-        /// Gets or sets the amount of the transaction.
-        /// </summary>
+        public string? SenderUsername { get; set; }
+        public string? ReceiverUsername { get; set; }
         public double Amount { get; set; }
-
-        /// <summary>
-        /// Gets or sets the timestamp of the transaction.
-        /// </summary>
         public DateTime Timestamp { get; set; }
     }
 }
