@@ -90,5 +90,21 @@ namespace SimpleBankingBLLibrary
             var user = _userRepository.GetUserByUsername(username);
             return user?.Balance ?? -1;
         }
+
+        public void CheckTransactionHistory(string username)
+        {
+            var transactions = _transactionRepository.GetTransactionsByUsername(username);
+            if (transactions.Count == 0)
+            {
+                Console.WriteLine("No transactions found.");
+                return;
+            }
+
+            Console.WriteLine($"Transaction history for {username}:");
+            foreach (var transaction in transactions)
+            {
+                Console.WriteLine($"{transaction.Timestamp} - {transaction.SenderUsername} -> {transaction.ReceiverUsername}: {transaction.Amount}");
+            }
+        }
     }
 }

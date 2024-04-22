@@ -34,7 +34,8 @@ namespace SimpleBankingApp
             Console.WriteLine("3. Withdraw");
             Console.WriteLine("4. Transfer");
             Console.WriteLine("5. Check Balance");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. Check Transaction History");
+            Console.WriteLine("7. Exit");
             Console.Write("Enter your choice: ");
         }
 
@@ -58,6 +59,9 @@ namespace SimpleBankingApp
                     CheckBalance();
                     break;
                 case 6:
+                    checkTransactionHistory();
+                    break;
+                case 7:
                     Console.WriteLine("Thankyou for using Simple Banking App.");
                     Environment.Exit(0);
                     break;
@@ -132,6 +136,12 @@ namespace SimpleBankingApp
                     return value;
                 Console.WriteLine("Invalid input. Please enter a valid positive number.");
             }
+        }
+
+        private void checkTransactionHistory()
+        {
+            string username = ReadUsername("Enter username: ");
+            _bankingOperations.CheckTransactionHistory(username);
         }
     }
 

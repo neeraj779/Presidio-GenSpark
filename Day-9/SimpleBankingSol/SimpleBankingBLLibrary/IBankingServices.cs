@@ -7,5 +7,6 @@
         void Withdraw(string username, double amount);
         void Transfer(string sender, string receiver, double amount);
         double CheckBalance(string username);
+        void CheckTransactionHistory(string username);
     }
 }
