@@ -170,5 +170,6 @@
     │       │   ├── Banking.cs
     │       │   └── SimpleBankingModelLibrary.csproj
     │       └── SimpleBankingSol.sln
+    ├── LICENSE
     └── README.md
 ```
