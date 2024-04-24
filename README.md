@@ -17,7 +17,7 @@
 ## 📂 Repository Structure
 ```
 └── Presidio-GenSpark
-    ├── Day-1
+    ├── Day-01
     │   ├── longest-valid-parentheses
     │   │   ├── README.md
     │   │   └── longest-valid-parentheses.cpp
@@ -27,6 +27,149 @@
     │   └── two-sum
     │       ├── README.md
     │       └── two-sum.cpp
+    ├── Day-02
+    │   └── pull_req.txt
+    ├── Day-03
+    │   ├── ConsoleApp
+    │   │   ├── Class1.cs
+    │   │   ├── Class2.cs
+    │   │   ├── Class3.cs
+    │   │   ├── Class4.cs
+    │   │   ├── Class5.cs
+    │   │   └── ConsoleApp.csproj
+    │   └── ConsoleAppSol.sln
+    ├── Day-04
+    │   ├── DoctorManagementSystemApp
+    │   │   ├── DoctorManagementSystemApp.csproj
+    │   │   ├── DoctorManagementSystemApp.sln
+    │   │   ├── Models
+    │   │   │   └── Doctor.cs
+    │   │   └── Program.cs
+    │   ├── Results.docx
+    │   └── VerifyCarNumberApp
+    │       ├── Program.cs
+    │       ├── VerifyCarNumberApp.csproj
+    │       └── VerifyCarNumberSol.sln
+    ├── Day-05
+    │   ├── CowAndBullSol
+    │   │   ├── CowAndBullApp
+    │   │   │   ├── CowAndBullApp.csproj
+    │   │   │   ├── CowAndBullApp.sln
+    │   │   │   └── Program.cs
+    │   │   └── CowAndBullSol.sln
+    │   ├── LeetCode
+    │   │   ├── README.md
+    │   │   └── bulls_and_cows.cs
+    │   └── RequestTrackerSol
+    │       ├── RequestTrackerApplication
+    │       │   ├── EmployeeProgram.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApplication.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── Employee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
+    ├── Day-06
+    │   ├── GovtRules
+    │   │   ├── GovtRulesApp
+    │   │   │   ├── GovtRulesApp.csproj
+    │   │   │   └── Program.cs
+    │   │   ├── GovtRulesModelLibrary
+    │   │   │   ├── ABC.cs
+    │   │   │   ├── Company.cs
+    │   │   │   ├── GovtRulesModelLibrary.csproj
+    │   │   │   ├── IGovtRules.cs
+    │   │   │   └── XYZ.cs
+    │   │   ├── GovtRulesSol.sln
+    │   │   └── Output.png
+    │   └── RequestTracker
+    │       ├── RequestTrackerApplication
+    │       │   ├── Company.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApplication.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── ContractEmployee.cs
+    │       │   ├── Department.cs
+    │       │   ├── Employee.cs
+    │       │   ├── IClientInteraction.cs
+    │       │   ├── IInternalCompanyWorking.cs
+    │       │   ├── PermanentEmployee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
+    ├── Day-07
+    │   └── ClinicAppointmentManagementSol
+    │       ├── ClinicAppointmentManagementApp
+    │       │   ├── ClinicAppointmentManagementApp.csproj
+    │       │   └── Program.cs
+    │       ├── ClinicAppointmentManagementBLLibrary
+    │       │   ├── ClinicAppointmentManagementBLLibrary.csproj
+    │       │   ├── IAppointmentService.cs
+    │       │   ├── IDoctorService.cs
+    │       │   └── IPatientService.cs
+    │       ├── ClinicAppointmentManagementDLLibrary
+    │       │   ├── AppointmentRepo.cs
+    │       │   ├── ClinicAppointmentManagementDLLibrary.csproj
+    │       │   ├── DoctorRepo.cs
+    │       │   ├── IRepo.cs
+    │       │   └── PatientRepo.cs
+    │       ├── ClinicAppointmentManagementSol.sln
+    │       └── ModelLibrary
+    │           ├── Appointment.cs
+    │           ├── Doctor.cs
+    │           ├── ModelLibrary.csproj
+    │           └── Patient.cs
+    ├── Day-08
+    │   └── RequestTracker
+    │       ├── RequestTrackerApp
+    │       │   ├── Company.cs
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerApp.csproj
+    │       ├── RequestTrackerBLLibrary
+    │       │   ├── DepartmentBL.cs
+    │       │   ├── DupDeptNameException.cs
+    │       │   ├── DupEmpNameException.cs
+    │       │   ├── EmpNotExistException.cs
+    │       │   ├── EmployeeBL.cs
+    │       │   ├── IDepartmentService.cs
+    │       │   ├── IEmployeeService.cs
+    │       │   ├── RequestTrackerBLLibrary.csproj
+    │       │   └── VoidDepartmentException.cs
+    │       ├── RequestTrackerDALibrary
+    │       │   ├── DepartmentRepo.cs
+    │       │   ├── EmployeeRepo.cs
+    │       │   ├── IRepository.cs
+    │       │   └── RequestTrackerDALibrary.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── ContractEmployee.cs
+    │       │   ├── Department.cs
+    │       │   ├── Employee.cs
+    │       │   ├── IClientInteraction.cs
+    │       │   ├── IInternalCompanyWorking.cs
+    │       │   ├── PermanentEmployee.cs
+    │       │   └── RequestTrackerModelLibrary.csproj
+    │       └── RequestTrackerSol.sln
+    ├── Day-09
+    │   ├── Q-Simple_Banking_Application.txt
+    │   └── SimpleBankingSol
+    │       ├── SimpleBankingApp
+    │       │   ├── Program.cs
+    │       │   └── SimpleBankingApp.csproj
+    │       ├── SimpleBankingBLLibrary
+    │       │   ├── BankingBL.cs
+    │       │   ├── IBankingServices.cs
+    │       │   ├── InsufficientFundsException.cs
+    │       │   ├── SimpleBankingBLLibrary.csproj
+    │       │   ├── UserAlreadyExistsException.cs
+    │       │   └── UserNotFoundException.cs
+    │       ├── SimpleBankingDALibrary
+    │       │   ├── BankingDAL.cs
+    │       │   ├── ITransactionRepo.cs
+    │       │   ├── IUserRepo.cs
+    │       │   └── SimpleBankingDALibrary.csproj
+    │       ├── SimpleBankingModelLibrary
+    │       │   ├── Banking.cs
+    │       │   └── SimpleBankingModelLibrary.csproj
+    │       └── SimpleBankingSol.sln
     ├── Day-10
     │   ├── ClinicAppointmentManagementSol
     │   │   ├── ClinicAppointmentManagementApp
@@ -86,149 +229,6 @@
     │           ├── Employee.cs
     │           ├── Request.cs
     │           └── RequestTrakerModelLibrary.csproj
-    ├── Day-2
-    │   └── pull_req.txt
-    ├── Day-3
-    │   ├── ConsoleApp
-    │   │   ├── Class1.cs
-    │   │   ├── Class2.cs
-    │   │   ├── Class3.cs
-    │   │   ├── Class4.cs
-    │   │   ├── Class5.cs
-    │   │   └── ConsoleApp.csproj
-    │   └── ConsoleAppSol.sln
-    ├── Day-4
-    │   ├── DoctorManagementSystemApp
-    │   │   ├── DoctorManagementSystemApp.csproj
-    │   │   ├── DoctorManagementSystemApp.sln
-    │   │   ├── Models
-    │   │   │   └── Doctor.cs
-    │   │   └── Program.cs
-    │   ├── Results.docx
-    │   └── VerifyCarNumberApp
-    │       ├── Program.cs
-    │       ├── VerifyCarNumberApp.csproj
-    │       └── VerifyCarNumberSol.sln
-    ├── Day-5
-    │   ├── CowAndBullSol
-    │   │   ├── CowAndBullApp
-    │   │   │   ├── CowAndBullApp.csproj
-    │   │   │   ├── CowAndBullApp.sln
-    │   │   │   └── Program.cs
-    │   │   └── CowAndBullSol.sln
-    │   ├── LeetCode
-    │   │   ├── README.md
-    │   │   └── bulls_and_cows.cs
-    │   └── RequestTrackerSol
-    │       ├── RequestTrackerApplication
-    │       │   ├── EmployeeProgram.cs
-    │       │   ├── Program.cs
-    │       │   └── RequestTrackerApplication.csproj
-    │       ├── RequestTrackerModelLibrary
-    │       │   ├── Employee.cs
-    │       │   └── RequestTrackerModelLibrary.csproj
-    │       └── RequestTrackerSol.sln
-    ├── Day-6
-    │   ├── GovtRules
-    │   │   ├── GovtRulesApp
-    │   │   │   ├── GovtRulesApp.csproj
-    │   │   │   └── Program.cs
-    │   │   ├── GovtRulesModelLibrary
-    │   │   │   ├── ABC.cs
-    │   │   │   ├── Company.cs
-    │   │   │   ├── GovtRulesModelLibrary.csproj
-    │   │   │   ├── IGovtRules.cs
-    │   │   │   └── XYZ.cs
-    │   │   ├── GovtRulesSol.sln
-    │   │   └── Output.png
-    │   └── RequestTracker
-    │       ├── RequestTrackerApplication
-    │       │   ├── Company.cs
-    │       │   ├── Program.cs
-    │       │   └── RequestTrackerApplication.csproj
-    │       ├── RequestTrackerModelLibrary
-    │       │   ├── ContractEmployee.cs
-    │       │   ├── Department.cs
-    │       │   ├── Employee.cs
-    │       │   ├── IClientInteraction.cs
-    │       │   ├── IInternalCompanyWorking.cs
-    │       │   ├── PermanentEmployee.cs
-    │       │   └── RequestTrackerModelLibrary.csproj
-    │       └── RequestTrackerSol.sln
-    ├── Day-7
-    │   └── ClinicAppointmentManagementSol
-    │       ├── ClinicAppointmentManagementApp
-    │       │   ├── ClinicAppointmentManagementApp.csproj
-    │       │   └── Program.cs
-    │       ├── ClinicAppointmentManagementBLLibrary
-    │       │   ├── ClinicAppointmentManagementBLLibrary.csproj
-    │       │   ├── IAppointmentService.cs
-    │       │   ├── IDoctorService.cs
-    │       │   └── IPatientService.cs
-    │       ├── ClinicAppointmentManagementDLLibrary
-    │       │   ├── AppointmentRepo.cs
-    │       │   ├── ClinicAppointmentManagementDLLibrary.csproj
-    │       │   ├── DoctorRepo.cs
-    │       │   ├── IRepo.cs
-    │       │   └── PatientRepo.cs
-    │       ├── ClinicAppointmentManagementSol.sln
-    │       └── ModelLibrary
-    │           ├── Appointment.cs
-    │           ├── Doctor.cs
-    │           ├── ModelLibrary.csproj
-    │           └── Patient.cs
-    ├── Day-8
-    │   └── RequestTracker
-    │       ├── RequestTrackerApp
-    │       │   ├── Company.cs
-    │       │   ├── Program.cs
-    │       │   └── RequestTrackerApp.csproj
-    │       ├── RequestTrackerBLLibrary
-    │       │   ├── DepartmentBL.cs
-    │       │   ├── DupDeptNameException.cs
-    │       │   ├── DupEmpNameException.cs
-    │       │   ├── EmpNotExistException.cs
-    │       │   ├── EmployeeBL.cs
-    │       │   ├── IDepartmentService.cs
-    │       │   ├── IEmployeeService.cs
-    │       │   ├── RequestTrackerBLLibrary.csproj
-    │       │   └── VoidDepartmentException.cs
-    │       ├── RequestTrackerDALibrary
-    │       │   ├── DepartmentRepo.cs
-    │       │   ├── EmployeeRepo.cs
-    │       │   ├── IRepository.cs
-    │       │   └── RequestTrackerDALibrary.csproj
-    │       ├── RequestTrackerModelLibrary
-    │       │   ├── ContractEmployee.cs
-    │       │   ├── Department.cs
-    │       │   ├── Employee.cs
-    │       │   ├── IClientInteraction.cs
-    │       │   ├── IInternalCompanyWorking.cs
-    │       │   ├── PermanentEmployee.cs
-    │       │   └── RequestTrackerModelLibrary.csproj
-    │       └── RequestTrackerSol.sln
-    ├── Day-9
-    │   ├── Q-Simple_Banking_Application.txt
-    │   └── SimpleBankingSol
-    │       ├── SimpleBankingApp
-    │       │   ├── Program.cs
-    │       │   └── SimpleBankingApp.csproj
-    │       ├── SimpleBankingBLLibrary
-    │       │   ├── BankingBL.cs
-    │       │   ├── IBankingServices.cs
-    │       │   ├── InsufficientFundsException.cs
-    │       │   ├── SimpleBankingBLLibrary.csproj
-    │       │   ├── UserAlreadyExistsException.cs
-    │       │   └── UserNotFoundException.cs
-    │       ├── SimpleBankingDALibrary
-    │       │   ├── BankingDAL.cs
-    │       │   ├── ITransactionRepo.cs
-    │       │   ├── IUserRepo.cs
-    │       │   └── SimpleBankingDALibrary.csproj
-    │       ├── SimpleBankingModelLibrary
-    │       │   ├── Banking.cs
-    │       │   └── SimpleBankingModelLibrary.csproj
-    │       └── SimpleBankingSol.sln
     ├── LICENSE
     └── README.md
 ```
