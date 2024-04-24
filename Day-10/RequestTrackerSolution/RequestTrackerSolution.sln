@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerApp", "RequestTrackerApp\RequestTrackerApp.csproj", "{1E90EC55-371E-489E-82AE-4F0DB85870D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrakerModelLibrary", "RequestTrakerModelLibrary\RequestTrakerModelLibrary.csproj", "{B7E5F276-D83C-43AD-957C-3FC39C74651D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerDALLibrary", "RequestTrackerDALLibrary\RequestTrackerDALLibrary.csproj", "{BE055D59-1B3A-4FCE-B543-01F690941D8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerBLLibrary", "RequestTrackerBLLibrary\RequestTrackerBLLibrary.csproj", "{0BF8A004-47A1-4CF8-BF59-BC9D57C58022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerTest", "RequestTrackerTest\RequestTrackerTest.csproj", "{89C97556-26C0-4D78-87B2-EA5491BA8E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerBLLTest", "RequestTrackerBLLTest\RequestTrackerBLLTest.csproj", "{D5194243-5F38-4E09-9A42-DAB69EA55634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E90EC55-371E-489E-82AE-4F0DB85870D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E90EC55-371E-489E-82AE-4F0DB85870D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E90EC55-371E-489E-82AE-4F0DB85870D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E90EC55-371E-489E-82AE-4F0DB85870D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E5F276-D83C-43AD-957C-3FC39C74651D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E5F276-D83C-43AD-957C-3FC39C74651D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E5F276-D83C-43AD-957C-3FC39C74651D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E5F276-D83C-43AD-957C-3FC39C74651D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE055D59-1B3A-4FCE-B543-01F690941D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE055D59-1B3A-4FCE-B543-01F690941D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE055D59-1B3A-4FCE-B543-01F690941D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE055D59-1B3A-4FCE-B543-01F690941D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF8A004-47A1-4CF8-BF59-BC9D57C58022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF8A004-47A1-4CF8-BF59-BC9D57C58022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF8A004-47A1-4CF8-BF59-BC9D57C58022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF8A004-47A1-4CF8-BF59-BC9D57C58022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C97556-26C0-4D78-87B2-EA5491BA8E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C97556-26C0-4D78-87B2-EA5491BA8E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C97556-26C0-4D78-87B2-EA5491BA8E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C97556-26C0-4D78-87B2-EA5491BA8E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5194243-5F38-4E09-9A42-DAB69EA55634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5194243-5F38-4E09-9A42-DAB69EA55634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5194243-5F38-4E09-9A42-DAB69EA55634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5194243-5F38-4E09-9A42-DAB69EA55634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E928C2F8-C511-4665-9D49-533633763BA5}
+	EndGlobalSection
+EndGlobal
