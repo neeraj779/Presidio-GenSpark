@@ -11,3 +11,14 @@
      - The maximum quantity of a product in the cart cannot be more than 5.
 
 4. Unit test your Business Logic.
+
+
+## Result
+
+1. Completed the repository for Product, Cart, and Cart Items.
+2. Completed the unit test for repositories.
+3. Created Business logic for the shopping app.
+4. Completed the unit test for Business Logic.
+
+## Screenshots
+![Code Coverage](CodeCoverage.png)
