@@ -27,6 +27,65 @@
     │   └── two-sum
     │       ├── README.md
     │       └── two-sum.cpp
+    ├── Day-10
+    │   ├── ClinicAppointmentManagementSol
+    │   │   ├── ClinicAppointmentManagementApp
+    │   │   │   ├── ClinicAppointmentManagementApp.csproj
+    │   │   │   └── Program.cs
+    │   │   ├── ClinicAppointmentManagementBLLTest
+    │   │   │   ├── ClinicAppointmentManagementBLLTest.csproj
+    │   │   │   ├── UnitTestForDoctorBL.cs
+    │   │   │   └── UnitTestForPatientBL.cs
+    │   │   ├── ClinicAppointmentManagementBLLibrary
+    │   │   │   ├── ClinicAppointmentManagementBLLibrary.csproj
+    │   │   │   ├── DoctorBL.cs
+    │   │   │   ├── DoctorNotExistsException.cs
+    │   │   │   ├── DuplicateDoctorNameException.cs
+    │   │   │   ├── DuplicatePatientNameException.cs
+    │   │   │   ├── IAppointmentService.cs
+    │   │   │   ├── IDoctorService.cs
+    │   │   │   ├── IPatientService.cs
+    │   │   │   ├── PatientBL.cs
+    │   │   │   └── PatientNotExistsException.cs
+    │   │   ├── ClinicAppointmentManagementDLLibrary
+    │   │   │   ├── AppointmentRepo.cs
+    │   │   │   ├── ClinicAppointmentManagementDLLibrary.csproj
+    │   │   │   ├── DoctorRepo.cs
+    │   │   │   ├── IRepo.cs
+    │   │   │   └── PatientRepo.cs
+    │   │   ├── ClinicAppointmentManagementSol.sln
+    │   │   └── ModelLibrary
+    │   │       ├── Appointment.cs
+    │   │       ├── Doctor.cs
+    │   │       ├── ModelLibrary.csproj
+    │   │       └── Patient.cs
+    │   └── RequestTrackerSolution
+    │       ├── RequestTrackerApp
+    │       │   ├── Program.cs
+    │       │   ├── RequestTrackerApp.csproj
+    │       │   └── Student.cs
+    │       ├── RequestTrackerBLLTest
+    │       │   ├── DepartmentBLTest.cs
+    │       │   └── RequestTrackerBLLTest.csproj
+    │       ├── RequestTrackerBLLibrary
+    │       │   ├── DepartmentBL.cs
+    │       │   ├── DepartmentNotFoundException.cs
+    │       │   ├── DuplicateDepartmentNameException.cs
+    │       │   ├── IDepartmentService.cs
+    │       │   └── RequestTrackerBLLibrary.csproj
+    │       ├── RequestTrackerDALLibrary
+    │       │   ├── DepartmentRepository.cs
+    │       │   ├── IRepository.cs
+    │       │   └── RequestTrackerDALLibrary.csproj
+    │       ├── RequestTrackerSolution.sln
+    │       ├── RequestTrackerTest
+    │       │   ├── RequestTrackerTest.csproj
+    │       │   └── UnitTest.cs
+    │       └── RequestTrakerModelLibrary
+    │           ├── Department.cs
+    │           ├── Employee.cs
+    │           ├── Request.cs
+    │           └── RequestTrakerModelLibrary.csproj
     ├── Day-2
     │   └── pull_req.txt
     ├── Day-3
