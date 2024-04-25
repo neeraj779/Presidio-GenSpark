@@ -97,28 +97,30 @@
     │       │   └── RequestTrackerModelLibrary.csproj
     │       └── RequestTrackerSol.sln
     ├── Day-07
-    │   └── ClinicAppointmentManagementSol
-    │       ├── ClinicAppointmentManagementApp
-    │       │   ├── ClinicAppointmentManagementApp.csproj
-    │       │   └── Program.cs
-    │       ├── ClinicAppointmentManagementBLLibrary
-    │       │   ├── ClinicAppointmentManagementBLLibrary.csproj
-    │       │   ├── IAppointmentService.cs
-    │       │   ├── IDoctorService.cs
-    │       │   └── IPatientService.cs
-    │       ├── ClinicAppointmentManagementDLLibrary
-    │       │   ├── AppointmentRepo.cs
-    │       │   ├── ClinicAppointmentManagementDLLibrary.csproj
-    │       │   ├── DoctorRepo.cs
-    │       │   ├── IRepo.cs
-    │       │   └── PatientRepo.cs
-    │       ├── ClinicAppointmentManagementSol.sln
-    │       └── ModelLibrary
-    │           ├── Appointment.cs
-    │           ├── Doctor.cs
-    │           ├── ModelLibrary.csproj
-    │           └── Patient.cs
+    │   ├── ClinicAppointmentManagementSol
+    │   │   ├── ClinicAppointmentManagementApp
+    │   │   │   ├── ClinicAppointmentManagementApp.csproj
+    │   │   │   └── Program.cs
+    │   │   ├── ClinicAppointmentManagementBLLibrary
+    │   │   │   ├── ClinicAppointmentManagementBLLibrary.csproj
+    │   │   │   ├── IAppointmentService.cs
+    │   │   │   ├── IDoctorService.cs
+    │   │   │   └── IPatientService.cs
+    │   │   ├── ClinicAppointmentManagementDLLibrary
+    │   │   │   ├── AppointmentRepo.cs
+    │   │   │   ├── ClinicAppointmentManagementDLLibrary.csproj
+    │   │   │   ├── DoctorRepo.cs
+    │   │   │   ├── IRepo.cs
+    │   │   │   └── PatientRepo.cs
+    │   │   ├── ClinicAppointmentManagementSol.sln
+    │   │   └── ModelLibrary
+    │   │       ├── Appointment.cs
+    │   │       ├── Doctor.cs
+    │   │       ├── ModelLibrary.csproj
+    │   │       └── Patient.cs
+    │   └── README.md
     ├── Day-08
+    │   ├── README.md
     │   └── RequestTracker
     │       ├── RequestTrackerApp
     │       │   ├── Company.cs
@@ -232,6 +234,39 @@
     ├── Day-11
     │   ├── CodeCoverage.png
     │   ├── README.md
+    │   └── ShoppingSol
+    │       ├── ShoppingBLLTest
+    │       │   ├── ShoppingBLLTest.csproj
+    │       │   └── ShoppingBLTest.cs
+    │       ├── ShoppingBLLibrary
+    │       │   ├── IShoppingServices.cs
+    │       │   ├── ShoppingBL.cs
+    │       │   └── ShoppingBLLLibrary.csproj
+    │       ├── ShoppingDALLibrary
+    │       │   ├── AbstractRepository.cs
+    │       │   ├── CartItemsRepository.cs
+    │       │   ├── CartRepository.cs
+    │       │   ├── CustomerRepository.cs
+    │       │   ├── IRepository.cs
+    │       │   ├── ProductRepository.cs
+    │       │   └── ShoppingDALLibrary.csproj
+    │       ├── ShoppingDALTest
+    │       │   ├── CustomerDALTest.cs
+    │       │   ├── ProductDALTest.cs
+    │       │   └── ShoppingDALTest.csproj
+    │       ├── ShoppingFE
+    │       │   ├── Program.cs
+    │       │   └── ShoppingFE.csproj
+    │       ├── ShoppingModelLibrary
+    │       │   ├── Cart.cs
+    │       │   ├── CartItem.cs
+    │       │   ├── Customer.cs
+    │       │   ├── Exceptions
+    │       │   │   └── NoCustomerWithGiveIdException.cs
+    │       │   ├── Product.cs
+    │       │   └── ShoppingModelLibrary.csproj
+    │       └── ShoppingSol.sln
+    ├── Day-12
     │   └── ShoppingSol
     │       ├── ShoppingBLLTest
     │       │   ├── ShoppingBLLTest.csproj
