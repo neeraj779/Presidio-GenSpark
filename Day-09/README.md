@@ -1,9 +1,9 @@
-Simple Banking Application
+# Simple Banking Application
 
-Objective:
+## Objective:
 Create a console-based banking application in C# that allows users to perform basic banking operations such as creating an account, depositing funds, withdrawing funds, and checking the account balance.
 
-Functional Requirements:
+## Functional Requirements:
 
 1. **User Registration:**
    - Users should be able to register by providing a unique username and a starting balance.
@@ -11,7 +11,7 @@ Functional Requirements:
 
 2. **Account Operations:**
    - Each registered user should have their own account to manage.
-   - Users should be able to transfer money from their account to another account
+   - Users should be able to transfer money from their account to another account.
    - Users should be able to check their account balance.
 
 3. **Error Handling:**
@@ -20,7 +20,7 @@ Functional Requirements:
 4. **Persistence:**
    - Account information should be stored in memory using collections like `List` or `Dictionary`.
 
-Non-Functional Requirements:
+## Non-Functional Requirements:
 
 1. **User Interface:**
    - The user interface should be simple and easy to understand, with clear instructions provided for each operation.
@@ -34,7 +34,7 @@ Non-Functional Requirements:
 4. **Scalability:**
    - Design the application to easily accommodate future enhancements or changes in requirements.
 
-#### Optional Enhancements (Not required but could be added for further functionality):
+### Optional Enhancements (Not required but could be added for further functionality):
 
 1. **Transaction History:**
    - Implement a feature to track and display the transaction history for each user.
@@ -47,4 +47,3 @@ Non-Functional Requirements:
 
 4. **Data Validation:**
    - Implement robust input validation to prevent incorrect data entry by users.
-
