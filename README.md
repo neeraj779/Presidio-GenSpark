@@ -266,39 +266,6 @@
     │       │   ├── Product.cs
     │       │   └── ShoppingModelLibrary.csproj
     │       └── ShoppingSol.sln
-    ├── Day-12
-    │   └── ShoppingSol
-    │       ├── ShoppingBLLTest
-    │       │   ├── ShoppingBLLTest.csproj
-    │       │   └── ShoppingBLTest.cs
-    │       ├── ShoppingBLLibrary
-    │       │   ├── IShoppingServices.cs
-    │       │   ├── ShoppingBL.cs
-    │       │   └── ShoppingBLLLibrary.csproj
-    │       ├── ShoppingDALLibrary
-    │       │   ├── AbstractRepository.cs
-    │       │   ├── CartItemsRepository.cs
-    │       │   ├── CartRepository.cs
-    │       │   ├── CustomerRepository.cs
-    │       │   ├── IRepository.cs
-    │       │   ├── ProductRepository.cs
-    │       │   └── ShoppingDALLibrary.csproj
-    │       ├── ShoppingDALTest
-    │       │   ├── CustomerDALTest.cs
-    │       │   ├── ProductDALTest.cs
-    │       │   └── ShoppingDALTest.csproj
-    │       ├── ShoppingFE
-    │       │   ├── Program.cs
-    │       │   └── ShoppingFE.csproj
-    │       ├── ShoppingModelLibrary
-    │       │   ├── Cart.cs
-    │       │   ├── CartItem.cs
-    │       │   ├── Customer.cs
-    │       │   ├── Exceptions
-    │       │   │   └── NoCustomerWithGiveIdException.cs
-    │       │   ├── Product.cs
-    │       │   └── ShoppingModelLibrary.csproj
-    │       └── ShoppingSol.sln
     ├── LICENSE
     └── README.md
 ```
