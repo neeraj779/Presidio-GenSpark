@@ -4,91 +4,148 @@ using ShoppingModelLibrary.Exceptions;
 
 namespace ShoppingBLLibrary
 {
-    public class CartService : ICartService
+    public class CartBL : ICartService
     {
         private readonly IRepository<int, Cart> _cartRepository;
+        private readonly IRepository<int, Customer> _customerRepository;
+        private readonly ICartItemRepository _cartItemRepository;
+        private readonly IRepository<int, Product> _productRepository;
 
-        public CartService(IRepository<int, Cart> cartRepository)
+        public CartBL(
+            IRepository<int, Cart> cartRepository,
+            IRepository<int, Customer> customerRepository,
+            ICartItemRepository cartItemRepository,
+            IRepository<int, Product> productRepository
+            )
         {
-            _cartRepository = cartRepository ?? throw new ArgumentNullException(nameof(cartRepository));
+            _cartRepository = cartRepository;
+            _customerRepository = customerRepository;
+            _cartItemRepository = cartItemRepository;
+            _productRepository = productRepository;
         }
 
-        public Cart AddCart(Cart cart, Customer customer)
+        public Cart AddCart(Cart cart, int customerId)
         {
+            var customer = _customerRepository.GetByKey(customerId);
+
             if (customer == null)
-                throw new ArgumentNullException(nameof(customer));
+                throw new NoCustomerWithGivenIdException();
 
             cart.Customer = customer;
-            Cart newCart = _cartRepository.Add(cart);
-            return newCart;
+            cart.CustomerId = customer.Id;
+
+            return _cartRepository.Add(cart);
         }
 
         public Cart GetCart(int id)
         {
-            try
-            {
-                return _cartRepository.GetByKey(id);
-            }
-            catch (NoCartWithGivenIdException)
-            {
+            var cart = _cartRepository.GetByKey(id);
+
+            if (cart == null)
                 throw new NoCartWithGivenIdException();
-            }
+
+            return cart;
         }
 
         public Cart AddCartItem(int cartId, CartItem cartItem)
         {
-            if (cartItem == null)
-                throw new ArgumentNullException(nameof(cartItem));
+            cartItem.CartId = cartId;
+            _cartItemRepository.Update(cartItem);
 
-            Cart cart = _cartRepository.GetByKey(cartId);
-
-            if (cart.CartItems.Count >= 5)
-                throw new CartCapacityExceededException();
+            var cart = GetCart(cartId);
 
             cart.CartItems.Add(cartItem);
-            cart.TotalPrice = CalculateTotalPrice(cart);
+            var updatedCart = CalculateTotalPrice(cart);
 
-            Cart updatedCart = _cartRepository.Update(cart);
-            return updatedCart;
+            return _cartRepository.Update(updatedCart);
         }
 
-        public double CalculateTotalPrice(Cart cart)
+        public Cart CalculateTotalPrice(Cart cart)
         {
-            if (cart == null || cart.CartItems == null)
-                return 0.0;
+            double totalCost = 0;
+            int totalQuantity = 0;
 
-            double totalPrice = 0.0;
-
-            foreach (var item in cart.CartItems)
+            foreach (var cartItem in cart.CartItems)
             {
-                totalPrice += item.Price * item.Quantity;
+                totalCost += cartItem.Price;
+                totalQuantity += cartItem.Quantity;
             }
 
-            if (totalPrice < 100)
-                totalPrice += 100.0;
+            if (totalQuantity == 3 && totalCost >= 1500)
+                cart.Discount = 5;
 
-            if (cart.CartItems.Count == 3 && totalPrice >= 1500.0)
-                totalPrice *= (1 - 0.05);
+            if (totalCost < 100)
+                cart.ShippingCharges = 100;
 
-            return totalPrice;
+            cart.TotalPrice = cart.ShippingCharges + (totalCost - (totalCost * (cart.Discount / 100)));
+
+            return cart;
+        }
+
+        public Cart UpdateCartItem(int cartId, CartItem cartItem)
+        {
+            var cart = GetCart(cartId);
+
+            if (!cart.CartItems.Exists(ci => ci.ProductId == cartItem.ProductId))
+                throw new NoCartItemWithGivenProductIdException();
+
+            for (int i = 0; i < cart.CartItems.Count; i++)
+            {
+                if (cart.CartItems[i].ProductId == cartItem.ProductId)
+                    cart.CartItems[i] = cartItem;
+            }
+
+            var updatedCart = CalculateTotalPrice(cart);
+
+            return _cartRepository.Update(updatedCart);
+        }
+
+        public Cart DeleteCartItem(int cartId, CartItem cartItem)
+        {
+            var cart = GetCart(cartId);
+
+            if (!cart.CartItems.Contains(cartItem))
+                throw new NoCartItemWithGivenProductIdException();
+
+            cart.CartItems.Remove(cartItem);
+
+            var updatedCart = CalculateTotalPrice(cart);
+
+            return _cartRepository.Update(updatedCart);
+        }
+
+        public Cart DeleteAllCartItems(Cart cart)
+        {
+            foreach (var cartItem in cart.CartItems)
+            {
+                var product = _productRepository.GetByKey(cartItem.ProductId);
+                product.QuantityInHand += cartItem.Quantity;
+                _productRepository.Update(product);
+                _cartItemRepository.Delete(cartItem.CartId, cartItem.ProductId);
+            }
+
+            cart.CartItems.Clear();
+            var updatedCart = CalculateTotalPrice(cart);
+
+            return _cartRepository.Update(updatedCart);
         }
 
         public Cart DeleteCart(Cart cart)
         {
-            try
-            {
-                return _cartRepository.Delete(cart.Id);
-            }
-            catch (NoCartWithGivenIdException)
-            {
-                throw new NoCartWithGivenIdException();
-            }
+            cart = DeleteAllCartItems(cart);
+            return _cartRepository.Delete(cart.Id);
         }
 
         public List<CartItem> GetAllCartItemDetails(int id)
         {
+            List<CartItem> CartItems = new List<CartItem>();
             Cart cart = _cartRepository.GetByKey(id);
-            return cart?.CartItems;
+            CartItems = cart.CartItems;
+
+            if (CartItems == null)
+                throw new NoCartItemsFoundException();
+
+            return CartItems;
         }
     }
 }

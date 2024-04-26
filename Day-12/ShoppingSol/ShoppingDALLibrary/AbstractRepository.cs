@@ -8,6 +8,14 @@
             items.Add(item);
             return item;
         }
+
+        public int GenerateId()
+        {
+            if (items.Count == 0)
+                return 1;
+            int id = items.Count;
+            return ++id;
+        }
         public virtual ICollection<T> GetAll()
         {
             items.Sort();
