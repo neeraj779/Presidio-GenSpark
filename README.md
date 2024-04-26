@@ -266,6 +266,45 @@
     │       │   ├── Product.cs
     │       │   └── ShoppingModelLibrary.csproj
     │       └── ShoppingSol.sln
+    ├── Day-12
+    │   └── ShoppingSol
+    │       ├── ShoppingBLLibrary
+    │       │   ├── CartBL.cs
+    │       │   ├── CartItemRepository.cs
+    │       │   ├── CustomerBL.cs
+    │       │   ├── ICartItemRepository.cs
+    │       │   ├── ICartService.cs
+    │       │   ├── ICustomerService.cs
+    │       │   ├── IProductService.cs
+    │       │   ├── ProductBL.cs
+    │       │   └── ShoppingBLLLibrary.csproj
+    │       ├── ShoppingDALLibrary
+    │       │   ├── AbstractRepository.cs
+    │       │   ├── CartItemsRepository.cs
+    │       │   ├── CartRepository.cs
+    │       │   ├── CustomerRepository.cs
+    │       │   ├── IRepository.cs
+    │       │   ├── ProductRepository.cs
+    │       │   └── ShoppingDALLibrary.csproj
+    │       ├── ShoppingDALTest
+    │       │   ├── CustomerDALTest.cs
+    │       │   ├── ProductDALTest.cs
+    │       │   └── ShoppingDALTest.csproj
+    │       ├── ShoppingFE
+    │       │   ├── Program.cs
+    │       │   └── ShoppingFE.csproj
+    │       ├── ShoppingModelLibrary
+    │       │   ├── Cart.cs
+    │       │   ├── CartItem.cs
+    │       │   ├── Customer.cs
+    │       │   ├── Exceptions
+    │       │   │   ├── CartCapacityExceededException.cs
+    │       │   │   ├── NoCartWithGivenIdException.cs
+    │       │   │   ├── NoCustomerWithGivenIdException.cs
+    │       │   │   └── NoProductWithGivenIdException.cs
+    │       │   ├── Product.cs
+    │       │   └── ShoppingModelLibrary.csproj
+    │       └── ShoppingSol.sln
     ├── LICENSE
     └── README.md
 ```
