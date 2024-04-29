@@ -2,7 +2,7 @@ name: Update Directory Structure in README
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+  - cron: '29 6 * * *'
 
 jobs:
   update-readme:
@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
   
       - name: Generate Directory Structure
         run: node .github/scripts/generate_directory_structure.js  
