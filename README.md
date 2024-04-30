@@ -314,6 +314,55 @@
     │       │   ├── Product.cs
     │       │   └── ShoppingModelLibrary.csproj
     │       └── ShoppingSol.sln
+    ├── Day-13
+    │   ├── README.md
+    │   └── ShoppingSol
+    │       ├── ShoppingBLLibrary
+    │       │   ├── CartBL.cs
+    │       │   ├── CartItemBL.cs
+    │       │   ├── CustomerBL.cs
+    │       │   ├── ICartItemService.cs
+    │       │   ├── ICartService.cs
+    │       │   ├── ICustomerService.cs
+    │       │   ├── IProductService.cs
+    │       │   ├── ProductBL.cs
+    │       │   └── ShoppingBLLLibrary.csproj
+    │       ├── ShoppingDALLibrary
+    │       │   ├── AbstractRepository.cs
+    │       │   ├── CartItemsRepository.cs
+    │       │   ├── CartRepository.cs
+    │       │   ├── CustomerRepository.cs
+    │       │   ├── ICartItemRepository.cs
+    │       │   ├── IRepository.cs
+    │       │   ├── ProductRepository.cs
+    │       │   └── ShoppingDALLibrary.csproj
+    │       ├── ShoppingFE
+    │       │   ├── Program.cs
+    │       │   └── ShoppingFE.csproj
+    │       ├── ShoppingModelLibrary
+    │       │   ├── Cart.cs
+    │       │   ├── CartItem.cs
+    │       │   ├── Customer.cs
+    │       │   ├── Exceptions
+    │       │   │   ├── CartCapacityExceededException.cs
+    │       │   │   ├── DuplicateCartException.cs
+    │       │   │   ├── InsufficientStockException.cs
+    │       │   │   ├── NoCartItemWithGivenProductIdException.cs
+    │       │   │   ├── NoCartItemsFoundException.cs
+    │       │   │   ├── NoCartWithGivenIdException.cs
+    │       │   │   ├── NoCustomerWithGivenIdException.cs
+    │       │   │   └── NoProductWithGivenIdException.cs
+    │       │   ├── Product.cs
+    │       │   └── ShoppingModelLibrary.csproj
+    │       └── ShoppingSol.sln
+    ├── Day-14
+    │   ├── LeetCodeProblemsApp
+    │   │   ├── ExcelSheetColumnTitle.cs
+    │   │   ├── LeetCodeProblemsApp.csproj
+    │   │   ├── LinkedListCycle.cs
+    │   │   └── MinimumDepthOfBinaryTree.cs
+    │   ├── LeetCodeProblemsSol.sln
+    │   └── README.md
     ├── LICENSE
     └── README.md
 ```
