@@ -13,7 +13,7 @@ Design the database for a shop which sells products
 *Note: You do not have to store the shop details.*
 
 ER Diagram for the above Question:
-![ER Diagram](Day-15/Task/ShopDB_ERD.png)
+![ER Diagram](ShopDB_ERD.png)
 
 ---
 
@@ -38,7 +38,7 @@ ER Diagram for the above Question:
 - Each dependent is allowed to rent one (1) movie at a time.
 
 ER Diagram for the above Question:
-![ER Diagram](Day-15/Task/VideoStoreDB_ERD.png)
+![ER Diagram](VideoStoreDB_ERD.png)
 
 ---
 
@@ -202,4 +202,4 @@ INSERT INTO Sales (sales_qty, item_name, dept_name) VALUES
 ```
 
 ER Diagram for the above Question:
-![ER Diagram](Day-15/Task/CompanyDB_ERD.png)
+![ER Diagram](CompanyDB_ERD.png)
