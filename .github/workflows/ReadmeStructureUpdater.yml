@@ -3,6 +3,7 @@ name: Update Directory Structure in README
 on:
   schedule:
   - cron: '29 6 * * *'
+  workflow_dispatch:
 
 jobs:
   update-readme:
