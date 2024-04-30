@@ -49,6 +49,7 @@ Design the database for a shop which sells products
 ***Create Tables with Integrity Constraints:***
 
 ***Table Schema***
+
 a) EMP
 - empno (primary key)
 - empname
