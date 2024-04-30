@@ -12,7 +12,8 @@ Design the database for a shop which sells products
 
 *Note: You do not have to store the shop details.*
 
-ER Diagram for the above Question:
+***ER Diagram for the above Question:***
+
 ![ER Diagram](ShopDB_ERD.png)
 
 ---
@@ -37,7 +38,8 @@ ER Diagram for the above Question:
 - A member may have a number of dependents (with known names).
 - Each dependent is allowed to rent one (1) movie at a time.
 
-ER Diagram for the above Question:
+***ER Diagram for the above Question:***
+
 ![ER Diagram](VideoStoreDB_ERD.png)
 
 ---
@@ -71,7 +73,7 @@ d) ITEM
 - itemtype
 - itemcolor
 
-SQL CODE for the above schema:
+***SQL CODE for the above schema:***
 
 ```sql
 -- Create Company database
@@ -201,5 +203,6 @@ INSERT INTO Sales (sales_qty, item_name, dept_name) VALUES
 (1, 'Camel Saddle', 'Recreation');
 ```
 
-ER Diagram for the above Question:
+***ER Diagram for the above Question:***
+
 ![ER Diagram](CompanyDB_ERD.png)
