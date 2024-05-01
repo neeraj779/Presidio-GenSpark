@@ -2,7 +2,7 @@ name: Update Directory Structure in README
 
 on:
   schedule:
-  - cron: '59 11 * * *'
+  - cron: '29 18 * * *'
   workflow_dispatch:
 
 jobs:
