@@ -363,6 +363,17 @@
     │   │   └── MinimumDepthOfBinaryTree.cs
     │   ├── LeetCodeProblemsSol.sln
     │   └── README.md
+    ├── Day-15
+    │   ├── Lernings
+    │   │   ├── Normalization.xlsx
+    │   │   ├── README.md
+    │   │   └── SQLQuery.sql
+    │   └── Task
+    │       ├── CompanyDBSQLQuery.sql
+    │       ├── CompanyDB_ERD.png
+    │       ├── README.md
+    │       ├── ShopDB_ERD.png
+    │       └── VideoStoreDB_ERD.png
     ├── LICENSE
     └── README.md
 ```
