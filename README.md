@@ -9,11 +9,10 @@
 	<img src="https://img.shields.io/github/languages/top/neeraj779/Presidio-GenSpark?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/neeraj779/Presidio-GenSpark?style=flat&color=0080ff" alt="repo-language-count">
 <p>
-<p align="center">
-	</p>
 
 ---
 
+[![Update Directory Structure in README](https://github.com/neeraj779/Presidio-GenSpark/actions/workflows/ReadmeStructureUpdater.yml/badge.svg)](https://github.com/neeraj779/Presidio-GenSpark/actions/workflows/ReadmeStructureUpdater.yml)
 ## 📂 Repository Structure
 ```
 └── Presidio-GenSpark
