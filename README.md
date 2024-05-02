@@ -373,6 +373,11 @@
     │       ├── README.md
     │       ├── ShopDB_ERD.png
     │       └── VideoStoreDB_ERD.png
+    ├── Day-16
+    │   ├── README.md
+    │   ├── northwind_queries.sql
+    │   ├── pgexercises.png
+    │   └── pubs_queries.sql
     ├── LICENSE
     └── README.md
 ```
