@@ -378,6 +378,9 @@
     │   ├── northwind_queries.sql
     │   ├── pgexercises.png
     │   └── pubs_queries.sql
+    ├── Day-17
+    │   ├── Assignment-SQLQuery.sql
+    │   └── SQLQuery.sql
     ├── LICENSE
     └── README.md
 ```
