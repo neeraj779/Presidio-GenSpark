@@ -381,6 +381,11 @@
     ├── Day-17
     │   ├── Assignment-SQLQuery.sql
     │   └── SQLQuery.sql
+    ├── Day-18
+    │   └── Shop-ERD.png
+    ├── Day-19
+    │   ├── Assignment_SQLQuery.sql
+    │   └── SQLQuery.sql
     ├── LICENSE
     └── README.md
 ```
