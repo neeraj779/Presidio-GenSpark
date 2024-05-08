@@ -382,10 +382,59 @@
     │   ├── Assignment-SQLQuery.sql
     │   └── SQLQuery.sql
     ├── Day-18
+    │   ├── MovieRental-ERD.png
     │   └── Shop-ERD.png
     ├── Day-19
     │   ├── Assignment_SQLQuery.sql
     │   └── SQLQuery.sql
+    ├── Day-20
+    │   ├── ClinicAppointment
+    │   │   ├── ClinicAppointmentApp
+    │   │   │   ├── ClinicAppointmentApp.csproj
+    │   │   │   └── Program.cs
+    │   │   ├── ClinicAppointmentBLLLibrary
+    │   │   │   ├── ClinicAppointmentBLLLibrary.csproj
+    │   │   │   ├── IAppointmentService.cs
+    │   │   │   ├── IDoctorService.cs
+    │   │   │   └── IPatientService.cs
+    │   │   ├── ClinicAppointmentDALLibrary
+    │   │   │   ├── AppointmentRepo.cs
+    │   │   │   ├── ClinicAppointmentDALLibrary.csproj
+    │   │   │   ├── DoctorRepo.cs
+    │   │   │   ├── IRepo.cs
+    │   │   │   ├── Model
+    │   │   │   │   ├── Appointment.cs
+    │   │   │   │   ├── Doctor.cs
+    │   │   │   │   ├── Patient.cs
+    │   │   │   │   └── dbClinicContext.cs
+    │   │   │   └── PatientRepo.cs
+    │   │   ├── ClinicAppointmentSol.sln
+    │   │   └── dbClinic_SQLQuery.sql
+    │   ├── EFCoreCodeFirstSol
+    │   │   ├── EFCoreCodeFirstApp
+    │   │   │   ├── Contexts
+    │   │   │   │   └── PizzaShopContext.cs
+    │   │   │   ├── EFCoreCodeFirstApp.csproj
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240508073514_Initial.Designer.cs
+    │   │   │   │   ├── 20240508073514_Initial.cs
+    │   │   │   │   └── PizzaShopContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   └── Pizza.cs
+    │   │   │   └── Program.cs
+    │   │   └── EFCoreCodeFirstSol.sln
+    │   ├── README.md
+    │   └── ShoppingEFSol
+    │       ├── ShoppingEF
+    │       │   ├── Model
+    │       │   │   ├── Area.cs
+    │       │   │   ├── Employee.cs
+    │       │   │   ├── EmployeeSkill.cs
+    │       │   │   ├── Skill.cs
+    │       │   │   └── dbEmployeeTrackerContext.cs
+    │       │   ├── Program.cs
+    │       │   └── ShoppingEF.csproj
+    │       └── ShoppingEFSol.sln
     ├── LICENSE
     └── README.md
 ```
