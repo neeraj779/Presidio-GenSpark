@@ -435,6 +435,31 @@
     │       │   ├── Program.cs
     │       │   └── ShoppingEF.csproj
     │       └── ShoppingEFSol.sln
+    ├── Day-21
+    │   ├── RequestTracker
+    │   │   ├── RequestTrackerBLLibrary
+    │   │   │   ├── EmployeeLoginBL.cs
+    │   │   │   ├── IEmployeeLoginBL.cs
+    │   │   │   └── RequestTrackerBLLibrary.csproj
+    │   │   ├── RequestTrackerDALLibrary
+    │   │   │   ├── EmployeeRepository.cs
+    │   │   │   ├── IRepository.cs
+    │   │   │   ├── RequestRepository.cs
+    │   │   │   └── RequestTrackerDALLibrary.csproj
+    │   │   ├── RequestTrackerFEAPP
+    │   │   │   ├── Program.cs
+    │   │   │   └── RequestTrackerFEAPP.csproj
+    │   │   ├── RequestTrackerModelLibrary
+    │   │   │   ├── Employee.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240509095206_init.Designer.cs
+    │   │   │   │   ├── 20240509095206_init.cs
+    │   │   │   │   └── RequestTrackerContextModelSnapshot.cs
+    │   │   │   ├── Request.cs
+    │   │   │   ├── RequestTrackerContext.cs
+    │   │   │   └── RequestTrackerModelLibrary.csproj
+    │   │   └── RequestTrackerSolution.sln
+    │   └── SimpleBankingApp-ERD.png
     ├── LICENSE
     └── README.md
 ```
