@@ -462,6 +462,58 @@
     │   │   │   └── RequestTrackerModelLibrary.csproj
     │   │   └── RequestTrackerSolution.sln
     │   └── SimpleBankingApp-ERD.png
+    ├── Day-22
+    │   ├── README.md
+    │   └── RequestTracker
+    │       ├── RequestTrackerBLLibrary
+    │       │   ├── AdminBL.cs
+    │       │   ├── EmployeeLoginBL.cs
+    │       │   ├── IAdminBL.cs
+    │       │   ├── IEmployeeLoginBL.cs
+    │       │   ├── IRequestBL.cs
+    │       │   ├── IRequestSolutionBL.cs
+    │       │   ├── ISolutionFeedbackBL.cs
+    │       │   ├── RequestBL.cs
+    │       │   ├── RequestSolutionBL.cs
+    │       │   ├── RequestTrackerBLLibrary.csproj
+    │       │   └── SolutionFeedbackBL.cs
+    │       ├── RequestTrackerDALLibrary
+    │       │   ├── EmployeeRepository.cs
+    │       │   ├── EmployeeRequestRepository.cs
+    │       │   ├── IRepository.cs
+    │       │   ├── RequestRepository.cs
+    │       │   ├── RequestSolutionRepository.cs
+    │       │   ├── RequestTrackerDALLibrary.csproj
+    │       │   └── SolutionFeedbackRepository.cs
+    │       ├── RequestTrackerFEAPP
+    │       │   ├── Program.cs
+    │       │   └── RequestTrackerFEAPP.csproj
+    │       ├── RequestTrackerModelLibrary
+    │       │   ├── Employee.cs
+    │       │   ├── Migrations
+    │       │   │   ├── 20240513050616_Init.Designer.cs
+    │       │   │   ├── 20240513050616_Init.cs
+    │       │   │   └── RequestTrackerContextModelSnapshot.cs
+    │       │   ├── Request.cs
+    │       │   ├── RequestSolution.cs
+    │       │   ├── RequestTrackerContext.cs
+    │       │   ├── RequestTrackerModelLibrary.csproj
+    │       │   └── SolutionFeedback.cs
+    │       └── RequestTrackerSolution.sln
+    ├── Day-23
+    │   ├── APISolution
+    │   │   ├── APISolution.sln
+    │   │   └── FirstAPI
+    │   │       ├── Controllers
+    │   │       │   └── WeatherForecastController.cs
+    │   │       ├── FirstAPI.csproj
+    │   │       ├── Program.cs
+    │   │       ├── Properties
+    │   │       │   └── launchSettings.json
+    │   │       ├── WeatherForecast.cs
+    │   │       ├── appsettings.Development.json
+    │   │       └── appsettings.json
+    │   └── README.md
     ├── LICENSE
     └── README.md
 ```
