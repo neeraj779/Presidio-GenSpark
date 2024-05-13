@@ -5,12 +5,14 @@
     <h1 align="center">PRESIDIO-GENSPARK</h1>
 </p>
 <p align="center">
+	<img src="https://img.shields.io/github/license/neeraj779/Presidio-GenSpark?style=flat&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/neeraj779/Presidio-GenSpark?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/neeraj779/Presidio-GenSpark?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/neeraj779/Presidio-GenSpark?style=flat&color=0080ff" alt="repo-language-count">
 <p>
 
 ---
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&logo=GitHub-Actions&logoColor=white" alt="GitHub%20Actions">
 
 [![Update Directory Structure in README](https://github.com/neeraj779/Presidio-GenSpark/actions/workflows/ReadmeStructureUpdater.yml/badge.svg)](https://github.com/neeraj779/Presidio-GenSpark/actions/workflows/ReadmeStructureUpdater.yml)
 ## 📂 Repository Structure
