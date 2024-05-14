@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClinicAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ClinicAPI.Controllers.DoctorController">
+            <summary>
+            Controller for managing doctors in the clinic.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.#ctor(ClinicAPI.Interfaces.IDoctorService)">
+            <summary>
+             
+            </summary>
+            <param name="doctorService"></param>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.GetDoctors">
+            <summary>
+            Retrieve a list of all doctors registered in the clinic.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.GetDoctorById(System.Int32)">
+            <summary>
+            Retrieve details of a specific doctor by their Id.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.UpdateDoctorExperience(System.Int32,System.Int32)">
+            <summary>
+            Update the experience years of a doctor identified by their Id.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.GetDoctorBasedOnSpecialization(System.String)">
+            <summary>
+            Retrieve a list of doctors based on their specialization.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.GetDoctorsByExperience(System.Int32)">
+            <summary>
+            Retrieve a list of doctors with experience equal to or greater than a specified value.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.GetDoctorsByAvailability">
+            <summary>
+            Retrieve a list of doctors currently available for appointments.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.AddDoctor(ClinicAPI.Models.Doctor)">
+            <summary>
+            Register a new doctor with the clinic.
+            </summary>
+        </member>
+        <member name="M:ClinicAPI.Controllers.DoctorController.DeleteDoctor(System.Int32)">
+            <summary>
+            Remove a doctor from the clinic's records by their unique identifier.
+            </summary>
+        </member>
+    </members>
+</doc>
