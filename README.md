@@ -514,6 +514,66 @@
     │   │       ├── appsettings.Development.json
     │   │       └── appsettings.json
     │   └── README.md
+    ├── Day-24
+    │   ├── ClinicAPI
+    │   │   ├── ClinicAPI
+    │   │   │   ├── ClinicAPI.csproj
+    │   │   │   ├── ClinicAPI.xml
+    │   │   │   ├── Contexts
+    │   │   │   │   └── ClinicContext.cs
+    │   │   │   ├── Controllers
+    │   │   │   │   └── DoctorController.cs
+    │   │   │   ├── Exceptions
+    │   │   │   │   ├── NoDoctorsFoundException.cs
+    │   │   │   │   └── NoSuchDoctorException.cs
+    │   │   │   ├── Interfaces
+    │   │   │   │   ├── IDoctorService.cs
+    │   │   │   │   └── IRepository.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240514111219_Init.Designer.cs
+    │   │   │   │   ├── 20240514111219_Init.cs
+    │   │   │   │   └── ClinicContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   └── Doctor.cs
+    │   │   │   ├── Program.cs
+    │   │   │   ├── Properties
+    │   │   │   │   └── launchSettings.json
+    │   │   │   ├── Repositories
+    │   │   │   │   └── ClinicRepository.cs
+    │   │   │   ├── Services
+    │   │   │   │   └── DoctorService.cs
+    │   │   │   ├── appsettings.Development.json
+    │   │   │   └── appsettings.json
+    │   │   └── ClinicSolution.sln
+    │   └── EmployeeRequestTrackerAPI
+    │       ├── EmployeeRequestTrackerAPI
+    │       │   ├── Contexts
+    │       │   │   └── RequestTrackerContext.cs
+    │       │   ├── Controllers
+    │       │   │   └── EmployeeController.cs
+    │       │   ├── EmployeeRequestTrackerAPI.csproj
+    │       │   ├── Exceptions
+    │       │   │   ├── NoEmployeesFoundException.cs
+    │       │   │   └── NoSuchEmployeeException.cs
+    │       │   ├── Interfaces
+    │       │   │   ├── IEmployeeService.cs
+    │       │   │   └── IReposiroty.cs
+    │       │   ├── Migrations
+    │       │   │   ├── 20240514061017_Init.Designer.cs
+    │       │   │   ├── 20240514061017_Init.cs
+    │       │   │   └── RequestTrackerContextModelSnapshot.cs
+    │       │   ├── Models
+    │       │   │   └── Employee.cs
+    │       │   ├── Program.cs
+    │       │   ├── Properties
+    │       │   │   └── launchSettings.json
+    │       │   ├── Repositories
+    │       │   │   └── EmployeeRepository.cs
+    │       │   ├── Services
+    │       │   │   └── EmployeeBasicService.cs
+    │       │   ├── appsettings.Development.json
+    │       │   └── appsettings.json
+    │       └── EmployeeRequestTrackerSol.sln
     ├── LICENSE
     └── README.md
 ```
