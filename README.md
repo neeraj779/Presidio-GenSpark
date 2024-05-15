@@ -516,6 +516,7 @@
     │   └── README.md
     ├── Day-24
     │   ├── ClinicAPI
+    │   │   ├── API-documentation.pdf
     │   │   ├── ClinicAPI
     │   │   │   ├── ClinicAPI.csproj
     │   │   │   ├── ClinicAPI.xml
@@ -574,6 +575,90 @@
     │       │   ├── appsettings.Development.json
     │       │   └── appsettings.json
     │       └── EmployeeRequestTrackerSol.sln
+    ├── Day-25
+    │   ├── EmployeeRequestTrackerAPI
+    │   │   ├── EmployeeRequestTrackerAPI
+    │   │   │   ├── Contexts
+    │   │   │   │   └── RequestTrackerContext.cs
+    │   │   │   ├── Controllers
+    │   │   │   │   ├── EmployeeController.cs
+    │   │   │   │   └── UserController.cs
+    │   │   │   ├── EmployeeRequestTrackerAPI.csproj
+    │   │   │   ├── Exceptions
+    │   │   │   │   ├── NoEmployeesFoundException.cs
+    │   │   │   │   ├── NoSuchEmployeeException.cs
+    │   │   │   │   ├── UnableToRegisterException.cs
+    │   │   │   │   ├── UnauthorizedUserException.cs
+    │   │   │   │   └── UserNotActiveException.cs
+    │   │   │   ├── Interfaces
+    │   │   │   │   ├── IEmployeeService.cs
+    │   │   │   │   ├── IReposiroty.cs
+    │   │   │   │   └── IUserService.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240514061017_Init.Designer.cs
+    │   │   │   │   ├── 20240514061017_Init.cs
+    │   │   │   │   ├── 20240515045733_UserTableAdded.Designer.cs
+    │   │   │   │   ├── 20240515045733_UserTableAdded.cs
+    │   │   │   │   └── RequestTrackerContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   ├── DTOs
+    │   │   │   │   │   ├── EmployeeUserDTO.cs
+    │   │   │   │   │   └── UserLoginDTO.cs
+    │   │   │   │   ├── Employee.cs
+    │   │   │   │   ├── ErrorModel.cs
+    │   │   │   │   └── UserModel.cs
+    │   │   │   ├── Program.cs
+    │   │   │   ├── Properties
+    │   │   │   │   └── launchSettings.json
+    │   │   │   ├── Repositories
+    │   │   │   │   ├── EmployeeRepository.cs
+    │   │   │   │   └── UserRepository.cs
+    │   │   │   ├── Services
+    │   │   │   │   ├── EmployeeBasicService.cs
+    │   │   │   │   └── UserService.cs
+    │   │   │   ├── appsettings.Development.json
+    │   │   │   └── appsettings.json
+    │   │   └── EmployeeRequestTrackerSol.sln
+    │   └── PizzaSolution
+    │       ├── PizzaAPI
+    │       │   ├── Contexts
+    │       │   │   └── PizzaContext.cs
+    │       │   ├── Controllers
+    │       │   │   ├── PizzaController.cs
+    │       │   │   └── UserController.cs
+    │       │   ├── Exceptions
+    │       │   │   ├── DuplicateUserException.cs
+    │       │   │   ├── NoSuchPizzaException.cs
+    │       │   │   ├── NonSuchUserException.cs
+    │       │   │   └── UnauthorizedUserException.cs
+    │       │   ├── Interfaces
+    │       │   │   ├── IPizzaService.cs
+    │       │   │   ├── IRepository.cs
+    │       │   │   ├── IUserRepository.cs
+    │       │   │   └── IUserService.cs
+    │       │   ├── Migrations
+    │       │   │   ├── 20240515115819_Init.Designer.cs
+    │       │   │   ├── 20240515115819_Init.cs
+    │       │   │   └── PizzaContextModelSnapshot.cs
+    │       │   ├── Models
+    │       │   │   ├── DTOs
+    │       │   │   │   └── UserLoginDTO.cs
+    │       │   │   ├── ErrorModel.cs
+    │       │   │   ├── Pizza.cs
+    │       │   │   └── User.cs
+    │       │   ├── PizzaAPI.csproj
+    │       │   ├── Program.cs
+    │       │   ├── Properties
+    │       │   │   └── launchSettings.json
+    │       │   ├── Repositories
+    │       │   │   ├── PizzaRepository.cs
+    │       │   │   └── UserRepository.cs
+    │       │   ├── Services
+    │       │   │   ├── PizzaService.cs
+    │       │   │   └── UserService.cs
+    │       │   ├── appsettings.Development.json
+    │       │   └── appsettings.json
+    │       └── PizzaSolution.sln
     ├── LICENSE
     └── README.md
 ```
