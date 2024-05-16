@@ -26,12 +26,12 @@ namespace PizzaAPI.Controllers
         [HttpPost("Login")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
-        public async Task<IActionResult> Login(UserLoginDTO user)
+        public async Task<ActionResult<LoginReturnDTO>> Login(UserLoginDTO user)
         {
             try
             {
                 var result = await _userService.Login(user);
-                return Ok("User logged in successfully");
+                return Ok(result);
             }
 
             catch(UnauthorizedUserException ex)

@@ -1,4 +1,5 @@
 ﻿using EmployeeRequestTrackerAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PizzaAPI.Exceptions;
 using PizzaAPI.Interfaces;
@@ -38,6 +39,7 @@ namespace PizzaAPI.Controllers
         /// <summary>
         /// Places an order for a pizza.
         /// </summary>
+        [Authorize]
         [HttpPost("OrderPizza")]
         public async Task<ActionResult<Pizza>> OrderPizza(int id)
         {
