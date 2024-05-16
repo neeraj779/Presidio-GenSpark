@@ -3,12 +3,12 @@
 namespace PizzaAPI.Exceptions
 {
     [Serializable]
-    internal class UnauthorizedUserException : Exception
+    internal class NoSuchUserException : Exception
     {
         string _message;
-        public UnauthorizedUserException()
+        public NoSuchUserException()
         {
-            _message = "Unauthorized user";
+            _message = "User not found";
         }
 
         public override string Message => _message;

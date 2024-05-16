@@ -5,20 +5,12 @@ namespace PizzaAPI.Exceptions
     [Serializable]
     internal class NoSuchPizzaException : Exception
     {
+        string _message;
         public NoSuchPizzaException()
         {
+            _message = "Pizza not found";
         }
 
-        public NoSuchPizzaException(string? message) : base(message)
-        {
-        }
-
-        public NoSuchPizzaException(string? message, Exception? innerException) : base(message, innerException)
-        {
-        }
-
-        protected NoSuchPizzaException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
+        public override string Message => _message;
     }
 }

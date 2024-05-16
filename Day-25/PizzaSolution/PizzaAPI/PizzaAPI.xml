@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PizzaAPI</name>
+    </assembly>
+    <members>
+        <member name="M:PizzaAPI.Controllers.PizzaController.GetPizzas">
+            <summary>
+            Retrieves all pizzas.
+            </summary>
+        </member>
+        <member name="M:PizzaAPI.Controllers.PizzaController.GetAvailablePizzas">
+            <summary>
+            Retrieves all available pizzas.
+            </summary>
+        </member>
+        <member name="M:PizzaAPI.Controllers.PizzaController.OrderPizza(System.Int32)">
+            <summary>
+            Places an order for a pizza.
+            </summary>
+        </member>
+        <member name="M:PizzaAPI.Controllers.UserController.Login(PizzaAPI.Models.DTOs.UserLoginDTO)">
+            <summary>
+            Logs in a user.
+            </summary>
+        </member>
+        <member name="M:PizzaAPI.Controllers.UserController.Register(PizzaAPI.Models.DTOs.UserLoginDTO)">
+            <summary>
+            Registers a new user.
+            </summary>
+        </member>
+    </members>
+</doc>

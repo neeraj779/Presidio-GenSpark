@@ -1,5 +1,6 @@
 ﻿using PizzaAPI.Models;
 using PizzaAPI.Interfaces;
+using PizzaAPI.Exceptions;
 
 namespace PizzaAPI.Services
 {
@@ -12,6 +13,14 @@ namespace PizzaAPI.Services
             _repository = repository;
         }
 
+        public async Task<IEnumerable<Pizza>> GetAvailablePizzas()
+        {
+            var pizzas = await _repository.Get();
+            pizzas = pizzas.Where(p => p.IsAvailable);
+            return pizzas;
+
+        }
+
         public async Task<IEnumerable<Pizza>> GetPizzas()
         {
             return await _repository.Get();
@@ -22,11 +31,11 @@ namespace PizzaAPI.Services
             var pizza = await _repository.Get(id);
             if (pizza == null)
             {
-                throw new Exception("Pizza not found");
+                throw new NoSuchPizzaException();
             }
             if (!pizza.IsAvailable)
             {
-                throw new Exception("Pizza not available");
+                throw new PizzaNotAvailableException();
             }
             return pizza;
         }

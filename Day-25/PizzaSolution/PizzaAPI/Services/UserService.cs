@@ -20,12 +20,12 @@ namespace PizzaAPI.Services
             var userDB = await _userRepo.GetByUserName(loginDTO.UserName);
             if (userDB == null)
             {
-                throw new UnauthorizedUserException("User not found");
+                throw new UnauthorizedUserException();
             }
 
             if(userDB.Status != "Active")
             {
-                throw new UnauthorizedUserException("Your account is not active");
+                throw new UserNotActiveException();
             }
 
             HMACSHA512 hMACSHA = new HMACSHA512(userDB.PasswordHashKey);
@@ -35,7 +35,7 @@ namespace PizzaAPI.Services
 
             if (!isPasswordCorrect)
             {
-                throw new UnauthorizedUserException("Invalid password");
+                throw new UnauthorizedUserException();
             }
 
             return userDB;
@@ -46,7 +46,7 @@ namespace PizzaAPI.Services
             var existingUser = await _userRepo.GetByUserName(user.UserName);
             if (existingUser != null)
             {
-                throw new DuplicateUserException("User already exists");
+                throw new DuplicateUserException();
             }
 
             User newUser = new User();

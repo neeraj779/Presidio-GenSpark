@@ -30,7 +30,7 @@ namespace PizzaAPI.Repositories
                 await _context.SaveChangesAsync();
                 return user;
             }
-            throw new Exception("No user with the given ID");
+            throw new NoSuchUserException();
         }
 
         public async Task<User> Get(int key)
@@ -59,7 +59,7 @@ namespace PizzaAPI.Repositories
                 await _context.SaveChangesAsync();
                 return user;
             }
-            throw new Exception("No user with the given ID");
+            throw new NoSuchUserException();
         }
     }
 }

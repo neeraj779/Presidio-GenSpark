@@ -1,13 +1,14 @@
 ﻿using EmployeeRequestTrackerAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PizzaAPI.Exceptions;
 using PizzaAPI.Interfaces;
 using PizzaAPI.Models;
 using PizzaAPI.Models.DTOs;
 
 namespace PizzaAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth/v1/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -18,22 +19,35 @@ namespace PizzaAPI.Controllers
             _userService = userService;
         }
 
+
+        /// <summary>
+        /// Logs in a user.
+        /// </summary>
         [HttpPost("Login")]
-        [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> Login(UserLoginDTO user)
         {
             try
             {
                 var result = await _userService.Login(user);
-                return Ok(result);
+                return Ok("User logged in successfully");
             }
-            catch (Exception ex)
+
+            catch(UnauthorizedUserException ex)
             {
-                return Unauthorized(new ErrorModel { Message = ex.Message });
+                return Unauthorized(new ErrorModel { ErrorCode = StatusCodes.Status401Unauthorized, Message = ex.Message });
+            }
+
+            catch (UserNotActiveException ex)
+            {
+                return Unauthorized(new ErrorModel { ErrorCode = StatusCodes.Status401Unauthorized, Message = ex.Message });
             }
         }
 
+        /// <summary>
+        /// Registers a new user.
+        /// </summary>
         [HttpPost("Register")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
@@ -46,7 +60,7 @@ namespace PizzaAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new ErrorModel { Message = ex.Message });
+                return BadRequest(new ErrorModel { ErrorCode = StatusCodes.Status400BadRequest, Message = ex.Message });
             }
         }
 
