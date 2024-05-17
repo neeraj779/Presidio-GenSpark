@@ -715,6 +715,57 @@
     │   │   │   └── appsettings.json
     │   │   └── EmployeeRequestTrackerSol.sln
     │   └── aVeryBigSum.cs
+    ├── Day-27
+    │   └── PizzaSolution
+    │       ├── PizzaAPI
+    │       │   ├── Contexts
+    │       │   │   └── PizzaContext.cs
+    │       │   ├── Controllers
+    │       │   │   ├── PizzaController.cs
+    │       │   │   └── UserController.cs
+    │       │   ├── Exceptions
+    │       │   │   ├── DuplicateUserException.cs
+    │       │   │   ├── NoSuchPizzaException.cs
+    │       │   │   ├── NoSuchUserException.cs
+    │       │   │   ├── PizzaNotAvailableException.cs
+    │       │   │   ├── UnauthorizedUserException.cs
+    │       │   │   └── UserNotActiveException.cs
+    │       │   ├── Interfaces
+    │       │   │   ├── IPizzaService.cs
+    │       │   │   ├── IRepository.cs
+    │       │   │   ├── ITokenService.cs
+    │       │   │   ├── IUserRepository.cs
+    │       │   │   └── IUserService.cs
+    │       │   ├── Migrations
+    │       │   │   ├── 20240515115819_Init.Designer.cs
+    │       │   │   ├── 20240515115819_Init.cs
+    │       │   │   ├── 20240517043000_AddRoleInUserTable.Designer.cs
+    │       │   │   ├── 20240517043000_AddRoleInUserTable.cs
+    │       │   │   └── PizzaContextModelSnapshot.cs
+    │       │   ├── Models
+    │       │   │   ├── DTOs
+    │       │   │   │   ├── LoginReturnDTO.cs
+    │       │   │   │   ├── UserLoginDTO.cs
+    │       │   │   │   ├── UserRegisterDTO.cs
+    │       │   │   │   └── UserReturnDTO.cs
+    │       │   │   ├── ErrorModel.cs
+    │       │   │   ├── Pizza.cs
+    │       │   │   └── User.cs
+    │       │   ├── PizzaAPI.csproj
+    │       │   ├── PizzaAPI.xml
+    │       │   ├── Program.cs
+    │       │   ├── Properties
+    │       │   │   └── launchSettings.json
+    │       │   ├── Repositories
+    │       │   │   ├── PizzaRepository.cs
+    │       │   │   └── UserRepository.cs
+    │       │   ├── Services
+    │       │   │   ├── PizzaService.cs
+    │       │   │   ├── TokenService.cs
+    │       │   │   └── UserService.cs
+    │       │   ├── appsettings.Development.json
+    │       │   └── appsettings.json
+    │       └── PizzaSolution.sln
     ├── LICENSE
     └── README.md
 ```
