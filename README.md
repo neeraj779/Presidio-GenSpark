@@ -716,6 +716,58 @@
     │   │   └── EmployeeRequestTrackerSol.sln
     │   └── aVeryBigSum.cs
     ├── Day-27
+    │   ├── EmployeeRequestTrackerAPI
+    │   │   ├── EmployeeRequestTrackerAPI
+    │   │   │   ├── Contexts
+    │   │   │   │   └── RequestTrackerContext.cs
+    │   │   │   ├── Controllers
+    │   │   │   │   ├── EmployeeController.cs
+    │   │   │   │   ├── RequestController.cs
+    │   │   │   │   └── UserController.cs
+    │   │   │   ├── EmployeeRequestTrackerAPI.csproj
+    │   │   │   ├── Exceptions
+    │   │   │   │   ├── NoEmployeesFoundException.cs
+    │   │   │   │   ├── NoRequestFoundException.cs
+    │   │   │   │   ├── NoSuchEmployeeException.cs
+    │   │   │   │   ├── NotLoggedInException.cs
+    │   │   │   │   ├── UnableToRegisterException.cs
+    │   │   │   │   ├── UnauthorizedUserException.cs
+    │   │   │   │   └── UserNotActiveException.cs
+    │   │   │   ├── Interfaces
+    │   │   │   │   ├── IEmployeeService.cs
+    │   │   │   │   ├── IRepository.cs
+    │   │   │   │   ├── IRequestService.cs
+    │   │   │   │   ├── ITokenService.cs
+    │   │   │   │   └── IUserService.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240520091129_Init.Designer.cs
+    │   │   │   │   ├── 20240520091129_Init.cs
+    │   │   │   │   └── RequestTrackerContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   ├── DTOs
+    │   │   │   │   │   ├── EmployeeUserDTO.cs
+    │   │   │   │   │   ├── LoginReturnDTO.cs
+    │   │   │   │   │   ├── RequestDTO.cs
+    │   │   │   │   │   ├── RequestReturnDTO.cs
+    │   │   │   │   │   └── UserLoginDTO.cs
+    │   │   │   │   ├── Employee.cs
+    │   │   │   │   ├── ErrorModel.cs
+    │   │   │   │   ├── Request.cs
+    │   │   │   │   └── UserModel.cs
+    │   │   │   ├── Program.cs
+    │   │   │   ├── Properties
+    │   │   │   │   └── launchSettings.json
+    │   │   │   ├── Repositories
+    │   │   │   │   ├── EmployeeRepository.cs
+    │   │   │   │   └── UserRepository.cs
+    │   │   │   ├── Services
+    │   │   │   │   ├── EmployeeBasicService.cs
+    │   │   │   │   ├── RequestService.cs
+    │   │   │   │   ├── TokenService.cs
+    │   │   │   │   └── UserService.cs
+    │   │   │   ├── appsettings.Development.json
+    │   │   │   └── appsettings.json
+    │   │   └── EmployeeRequestTrackerSol.sln
     │   └── PizzaSolution
     │       ├── PizzaAPI
     │       │   ├── Contexts
@@ -766,6 +818,71 @@
     │       │   ├── appsettings.Development.json
     │       │   └── appsettings.json
     │       └── PizzaSolution.sln
+    ├── Day-28
+    │   ├── EmployeeRequestTrackerAPI
+    │   │   ├── EmployeeRequestTrackerAPI
+    │   │   │   ├── Contexts
+    │   │   │   │   └── RequestTrackerContext.cs
+    │   │   │   ├── Controllers
+    │   │   │   │   ├── EmployeeController.cs
+    │   │   │   │   └── UserController.cs
+    │   │   │   ├── EmployeeRequestTrackerAPI.csproj
+    │   │   │   ├── Exceptions
+    │   │   │   │   ├── NoEmployeesFoundException.cs
+    │   │   │   │   ├── NoSuchEmployeeException.cs
+    │   │   │   │   ├── UnableToRegisterException.cs
+    │   │   │   │   ├── UnauthorizedUserException.cs
+    │   │   │   │   └── UserNotActiveException.cs
+    │   │   │   ├── Interfaces
+    │   │   │   │   ├── IEmployeeService.cs
+    │   │   │   │   ├── IReposiroty.cs
+    │   │   │   │   ├── ITokenService.cs
+    │   │   │   │   └── IUserService.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240516064810_Init.Designer.cs
+    │   │   │   │   ├── 20240516064810_Init.cs
+    │   │   │   │   └── RequestTrackerContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   ├── DTOs
+    │   │   │   │   │   ├── EmployeeUserDTO.cs
+    │   │   │   │   │   ├── LoginReturnDTO.cs
+    │   │   │   │   │   └── UserLoginDTO.cs
+    │   │   │   │   ├── Employee.cs
+    │   │   │   │   ├── ErrorModel.cs
+    │   │   │   │   └── UserModel.cs
+    │   │   │   ├── Program.cs
+    │   │   │   ├── Properties
+    │   │   │   │   └── launchSettings.json
+    │   │   │   ├── Repositories
+    │   │   │   │   ├── EmployeeRepository.cs
+    │   │   │   │   └── UserRepository.cs
+    │   │   │   ├── Services
+    │   │   │   │   ├── EmployeeBasicService.cs
+    │   │   │   │   ├── TokenService.cs
+    │   │   │   │   └── UserService.cs
+    │   │   │   ├── appsettings.Development.json
+    │   │   │   ├── appsettings.json
+    │   │   │   └── log4net.config
+    │   │   └── EmployeeRequestTrackerSol.sln
+    │   └── UnderstandingLINQSol
+    │       ├── UnderstandingLINQApp
+    │       │   ├── Model
+    │       │   │   ├── Author.cs
+    │       │   │   ├── Discount.cs
+    │       │   │   ├── Employee.cs
+    │       │   │   ├── Job.cs
+    │       │   │   ├── PubInfo.cs
+    │       │   │   ├── Publisher.cs
+    │       │   │   ├── Roysched.cs
+    │       │   │   ├── Sale.cs
+    │       │   │   ├── Store.cs
+    │       │   │   ├── Title.cs
+    │       │   │   ├── Titleauthor.cs
+    │       │   │   ├── Titleview.cs
+    │       │   │   └── pubsContext.cs
+    │       │   ├── Program.cs
+    │       │   └── UnderstandingLINQApp.csproj
+    │       └── UnderstandingLINQSol.sln
     ├── LICENSE
     └── README.md
 ```
