@@ -883,6 +883,56 @@
     │       │   ├── Program.cs
     │       │   └── UnderstandingLINQApp.csproj
     │       └── UnderstandingLINQSol.sln
+    ├── Day-29
+    │   └── EmployeeRequestTrackerAPI
+    │       ├── EmployeeRequestTrackerAPI
+    │       │   ├── Contexts
+    │       │   │   └── RequestTrackerContext.cs
+    │       │   ├── Controllers
+    │       │   │   ├── EmployeeController.cs
+    │       │   │   └── UserController.cs
+    │       │   ├── EmployeeRequestTrackerAPI.csproj
+    │       │   ├── Exceptions
+    │       │   │   ├── NoEmployeesFoundException.cs
+    │       │   │   ├── NoSuchEmployeeException.cs
+    │       │   │   ├── UnableToRegisterException.cs
+    │       │   │   ├── UnauthorizedUserException.cs
+    │       │   │   └── UserNotActiveException.cs
+    │       │   ├── Interfaces
+    │       │   │   ├── IEmployeeService.cs
+    │       │   │   ├── IReposiroty.cs
+    │       │   │   ├── ITokenService.cs
+    │       │   │   └── IUserService.cs
+    │       │   ├── Migrations
+    │       │   │   ├── 20240516064810_Init.Designer.cs
+    │       │   │   ├── 20240516064810_Init.cs
+    │       │   │   └── RequestTrackerContextModelSnapshot.cs
+    │       │   ├── Models
+    │       │   │   ├── DTOs
+    │       │   │   │   ├── EmployeeUserDTO.cs
+    │       │   │   │   ├── LoginReturnDTO.cs
+    │       │   │   │   └── UserLoginDTO.cs
+    │       │   │   ├── Employee.cs
+    │       │   │   ├── ErrorModel.cs
+    │       │   │   └── UserModel.cs
+    │       │   ├── Program.cs
+    │       │   ├── Properties
+    │       │   │   └── launchSettings.json
+    │       │   ├── Repositories
+    │       │   │   ├── EmployeeRepository.cs
+    │       │   │   └── UserRepository.cs
+    │       │   ├── Services
+    │       │   │   ├── EmployeeBasicService.cs
+    │       │   │   ├── TokenService.cs
+    │       │   │   └── UserService.cs
+    │       │   ├── appsettings.Development.json
+    │       │   ├── appsettings.json
+    │       │   └── log4net.config
+    │       ├── EmployeeRequestTrackerSol.sln
+    │       └── RequestTrackerTest
+    │           ├── EmployeeRepositoryTest.cs
+    │           ├── RequestTrackerTest.csproj
+    │           └── TokenServiceTest.cs
     ├── LICENSE
     └── README.md
 ```
