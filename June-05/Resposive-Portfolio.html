@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neeraj's Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        background-color: #006769;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        color: #40a578;
+        border-bottom: 2px solid #9dde8b;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      li h3 {
+        margin-top: 0;
+        color: #26355d;
+      }
+      li p {
+        margin: 10px 0;
+      }
+      footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      }
+      footer p {
+        margin: 0;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1200px) {
+        .container {
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        header {
+          padding: 20px 0;
+        }
+        header h1 {
+          font-size: 2rem;
+        }
+        header p {
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+      @media (max-width: 480px) {
+        header {
+          padding: 10px 0;
+        }
+        header h1 {
+          font-size: 1.5rem;
+        }
+        header p {
+          font-size: 0.9rem;
+          padding: 0 10px;
+        }
+        li {
+          padding: 15px;
+        }
+        li h3 {
+          font-size: 1.2rem;
+        }
+        li p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hi, I am Neeraj 👋</h1>
+      <p>
+        I am a passionate learner who is always eager to acquire new knowledge
+        and work across various technologies and domains. I enjoy exploring
+        emerging technologies and utilizing them to solve real-life problems.
+        Happy reading! 🍻
+      </p>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I am Neeraj, a technology enthusiast with a
+          passion for learning and problem-solving. My journey in the tech world
+          is driven by curiosity and the desire to make a positive impact
+          through innovative solutions.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Languages: C/C++, C#, Python, JavaScript, HTML5, CSS3</li>
+          <li>Frameworks: Django, Flask, ASP.NET, Bootstrap, Tailwind CSS</li>
+          <li>Developer Tools: Git, GitHub, VS Code, PyCharm, Postman</li>
+          <li>Linux distributions: Ubuntu, Debian</li>
+          <li>Database: SQL Server, MySQL, SQLite</li>
+          <li>Deployment: AWS EC2, Heroku, Netlify, Vercel, Nginx, Gunicorn</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>Bridge Web Application</h3>
+            <p>
+              <strong>Technologies:</strong> Python, Django, Bootstrap, Celery,
+              Redis, Sqlite
+            </p>
+            <p>
+              Created a Django-based web app to enhance accessibility for
+              visually impaired individuals, incorporating advanced
+              functionalities like text-to-speech, speech-to-text,
+              PDF-to-speech, and assignment upload features. Integrated email
+              functionality utilizing Celery to ensure swift notifications and
+              seamless real-time collaboration. Employed Heroku for CI/CD,
+              enabling seamless continuous delivery.
+            </p>
+          </li>
+          <li>
+            <h3>News and Blogs Web Application</h3>
+            <p>
+              <strong>Technologies:</strong> Python, Django, REST API, Sqlite
+            </p>
+            <p>
+              Developed a dynamic News and Blogs web app in Python and Django,
+              offering real-time news updates from the News API to keep users
+              informed. Implemented a secure user authentication system and an
+              intuitive blog management interface, allowing users to
+              effortlessly create and delete their own blog posts. Utilized
+              Django REST Framework to create efficient API endpoints, enabling
+              seamless blog management through API calls, including CRUD
+              operations.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <h3>IIT Bombay</h3>
+            <p><strong>Role:</strong> Software Development Intern</p>
+            <p><strong>Duration:</strong> Sep 2022 - Aug 2023</p>
+            <p><strong>Location:</strong> Remote, Mumbai, India</p>
+            <p>
+              Developed IIT Bombay's Leap OCR Tool and Udaan Translation Tool,
+              benefiting more than 2000+ users across India and abroad for
+              efficient document OCR and translation. Led a team of five
+              developers and facilitated collaboration with four teams,
+              overseeing development, deployment, problem-solving, testing,
+              feature implementation, and architectural design. Spearheaded
+              reliability enhancements, managed databases, implemented
+              asynchronous tasks, web sockets, and enhanced authentication and
+              authorization mechanisms.
+            </p>
+          </li>
+          <li>
+            <h3>SIMMI Foundation</h3>
+            <p><strong>Role:</strong> Backend Development Intern</p>
+            <p><strong>Duration:</strong> Aug 2022 - Nov 2022</p>
+            <p><strong>Location:</strong> Remote, Gurgaon, India</p>
+            <p>
+              Contributed to the development and testing of novel system
+              components and services. Designed the backend of the website using
+              Django, and integrated frontend and backend features through the
+              Django Rest API.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <h3>Sathyabama Institute of Science and Technology</h3>
+            <p><strong>Location:</strong> Chennai, India</p>
+            <p>
+              <strong>Degree:</strong> B.E in Electronics and Communications
+              Engineering
+            </p>
+            <p><strong>CGPA:</strong> 8.12</p>
+            <p><strong>Duration:</strong> 2020 – 2024</p>
+          </li>
+          <li>
+            <h3>Govt. Boys Sr. Sec. School</h3>
+            <p><strong>Location:</strong> Delhi, India</p>
+            <p><strong>Degree:</strong> Intermediate in Science (CBSE)</p>
+            <p><strong>Percentage:</strong> 81.5%</p>
+            <p><strong>Duration:</strong> 2018 - 2020</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Achievements / Extracurricular</h2>
+        <ul>
+          <li>
+            Won the "Best Project in Language C/C++" award at the Techzamia
+            event held at Sathyabama University.
+          </li>
+          <li>
+            Received a Letter of Recommendation from a professor at IIT Bombay
+            during the internship.
+          </li>
+          <li>
+            Received an appreciation letter from Simmi Foundation during the
+            internship.
+          </li>
+          <li>
+            Participated in the open access Accenture, J.P. Morgan, and Goldman
+            Sachs Virtual Experience Program.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.:
+        </p>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:neeraj9108@gmail.com">neeraj9108@gmail.com</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/neeraj779" target="_blank"
+              >linkedin.com/in/neeraj779</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/neeraj779" target="_blank"
+              >github.com/neeraj779</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Neeraj. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
