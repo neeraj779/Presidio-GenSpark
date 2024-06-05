@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.desc {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 12px;
+}

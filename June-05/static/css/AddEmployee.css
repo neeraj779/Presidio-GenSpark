@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background-color: #f1f1f1;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+    padding: 20px;
+    padding-right: 50px;
+    border: 1px solid #e7e7e7;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 1rem;
+}
+
+button {
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #950aeb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a0a9e;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
