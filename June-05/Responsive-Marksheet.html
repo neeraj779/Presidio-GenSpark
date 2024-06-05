@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marksheet</title>
+    <style>
+      body {
+        border: 3px solid red;
+        padding: 2%;
+        font-family: Arial, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      th {
+        background-color: bisque;
+      }
+      .center {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+      .left {
+        text-align: left;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 585px) {
+        table,
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+        th {
+          background-color: bisque;
+        }
+        td {
+          text-align: right;
+        }
+        td::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        td[rowspan] {
+          display: table-cell;
+        }
+        td[colspan] {
+          display: table-cell;
+        }
+        .center {
+          text-align: center;
+        }
+        .right {
+          text-align: right;
+        }
+        .left {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td rowspan="2" style="width: 15%">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+            height="100px"
+            width="100px"
+          />
+        </td>
+        <td rowspan="2" style="width: 70%; text-align: center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmIM98Qp1GxQD4XnjHfpkw7fjN3AQof13og&s"
+            height="150px"
+            width="250px"
+          />
+        </td>
+        <td class="right" data-label="Serial No">Serial No: 472648712684</td>
+      </tr>
+      <tr>
+        <td class="right">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            height="100px"
+            width="100px"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <h1 class="center">ABC UNIVERSITY</h1>
+    <h3 class="center">STATEMENT OF MARKS</h3>
+    <h4 class="center">Diploma | (Electronics and Electrical Engineering)</h4>
+
+    <table style="width: 80%" align="center">
+      <tr>
+        <td class="left" data-label="Name"><b>Name: </b> Rajesh</td>
+        <td class="left" data-label="Admission No">
+          <b>Admission No: </b> 9918384874
+        </td>
+      </tr>
+      <tr>
+        <td class="left" data-label="Father's Name">
+          <b>Father's Name: </b> John
+        </td>
+        <td class="left" data-label="Year/Semester">
+          <b>Year/Semester: </b> 2nd Year/ - 3/4 Sem
+        </td>
+      </tr>
+      <tr>
+        <td class="left" data-label="Regn No"><b>Regn No: </b>097598365</td>
+        <td class="left" data-label="Month & Year of exam">
+          <b>Month & Year of exam: </b> June 2024
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <table style="width: 80%" align="center">
+      <tr style="background-color: bisque">
+        <th colspan="6">SEMESTER 3</th>
+      </tr>
+      <tr style="background-color: red; color: white">
+        <th>SUBJECT CODE</th>
+        <th>SUBJECT NAME</th>
+        <th>TOTAL MARKS</th>
+        <th>THEORY MARKS</th>
+        <th>PRACTICAL MARKS</th>
+        <th>RESULT</th>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">SEC203</td>
+        <td data-label="Subject Name">DSA</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">90</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">SE102</td>
+        <td data-label="Subject Name">Analog Systems</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">90</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A+</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">CSE409</td>
+        <td data-label="Subject Name">VLSI</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">97</td>
+        <td data-label="Practical Marks">29</td>
+        <td data-label="Result">A++</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">CSE500</td>
+        <td data-label="Subject Name">System design</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">70</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">LIC202</td>
+        <td data-label="Subject Name">Networking</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">88</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b>TOTAL</b></td>
+        <td><b>500</b></td>
+        <td><b>457</b></td>
+        <td><b>158</b></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <table style="width: 80%" align="center">
+      <tr style="background-color: bisque">
+        <th colspan="6">SEMESTER 4</th>
+      </tr>
+      <tr style="background-color: red; color: white">
+        <th>SUBJECT CODE</th>
+        <th>SUBJECT NAME</th>
+        <th>TOTAL MARKS</th>
+        <th>THEORY MARKS</th>
+        <th>PRACTICAL MARKS</th>
+        <th>RESULT</th>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">CSE101</td>
+        <td data-label="Subject Name">Python</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">79</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">B</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">CSE102</td>
+        <td data-label="Subject Name">Signals and System</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">80</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A+</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">SEC101</td>
+        <td data-label="Subject Name">Blockchain</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">89</td>
+        <td data-label="Practical Marks">27</td>
+        <td data-label="Result">A+</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">CSE109</td>
+        <td data-label="Subject Name">DSP</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">87</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A</td>
+      </tr>
+      <tr>
+        <td data-label="Subject Code">AC101</td>
+        <td data-label="Subject Name">Computer Networks</td>
+        <td data-label="Total Marks">100</td>
+        <td data-label="Theory Marks">77</td>
+        <td data-label="Practical Marks">30</td>
+        <td data-label="Result">A</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b>TOTAL</b></td>
+        <td><b>500</b></td>
+        <td><b>459</b></td>
+        <td><b>190</b></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table style="width: 80%" align="center">
+      <tr>
+        <td class="left"><b> Result: Pass </b></td>
+        <td class="right">
+          <img
+            src="https://t4.ftcdn.net/jpg/02/99/93/97/360_F_299939713_vLQReWjUOCN6GN6tEbzpDBktyOUDOwE9.jpg"
+            width="50px"
+            height="50px"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table
+      style="border: 1px solid black; width: 80%; border-collapse: collapse"
+      align="center"
+    >
+      <tr>
+        <td style="border-right: 1px solid black"></td>
+        <td class="center" style="border-right: 1px solid black">I YEAR</td>
+        <td class="center">Grand Total</td>
+      </tr>
+      <tr style="border-top: 1px solid black">
+        <td style="border-right: 1px solid black">Full Marks</td>
+        <td class="center" style="border-right: 1px solid black">1000</td>
+        <td class="center">2000</td>
+      </tr>
+      <tr style="border-top: 1px solid black">
+        <td style="border-right: 1px solid black">Marks Obtained</td>
+        <td class="center" style="border-right: 1px solid black">976</td>
+        <td class="center">1927</td>
+      </tr>
+    </table>
+
+    <p class="left">
+      Date: 01/05/2024
+      <br />
+      Delhi
+    </p>
+    <p class="right">Controller of Examination</p>
+
+    <footer class="center">*123456789*</footer>
+  </body>
+</html>
