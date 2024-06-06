@@ -941,6 +941,28 @@
     │   ├── portfolio.html
     │   ├── task.html
     │   └── work.html
+    ├── June-05
+    │   ├── AddEmployee.html
+    │   ├── EmployeeDetails.html
+    │   ├── Employees.html
+    │   ├── Home.html
+    │   ├── Responsive-Marksheet.html
+    │   ├── Responsive-Resume.html
+    │   ├── Resposive-Portfolio.html
+    │   ├── dummy.html
+    │   ├── index.html
+    │   ├── media
+    │   │   └── images
+    │   │       ├── employee1.jpg
+    │   │       ├── employee2.jpg
+    │   │       └── employee3.jpg
+    │   └── static
+    │       └── css
+    │           ├── AddEmployee.css
+    │           ├── EmployeeDetails.css
+    │           ├── Employees.css
+    │           ├── Home.css
+    │           └── index.css
     ├── LICENSE
     └── README.md
 ```
