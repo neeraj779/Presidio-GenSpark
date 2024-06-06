@@ -1,0 +1,89 @@
+body {
+    background-color: #2148c1;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: 10px;
+    width: 100%;    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    text-align: center;
+}
+
+.login-box img {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #fff;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: #0413ec;
+    cursor: pointer;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.forgot-pass {
+    color: #fff;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 320px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 42%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.input-container input {
+    padding-left: 30px;
+}
