@@ -963,6 +963,40 @@
     │           ├── Employees.css
     │           ├── Home.css
     │           └── index.css
+    ├── June-06
+    │   ├── Assignment
+    │   │   ├── Gmail UI
+    │   │   │   ├── Gmail_UI.html
+    │   │   │   ├── Output.png
+    │   │   │   ├── assets
+    │   │   │   │   └── img
+    │   │   │   │       ├── bg.png
+    │   │   │   │       ├── phone1.png
+    │   │   │   │       ├── phone2.png
+    │   │   │   │       ├── phone3.png
+    │   │   │   │       └── phone4.png
+    │   │   │   └── static
+    │   │   │       └── css
+    │   │   │           └── gmail_ui.css
+    │   │   ├── LoginPage
+    │   │   │   ├── Output.png
+    │   │   │   ├── assets
+    │   │   │   │   └── img
+    │   │   │   │       ├── bg.png
+    │   │   │   │       └── logo.png
+    │   │   │   ├── loginPage.html
+    │   │   │   └── static
+    │   │   │       └── css
+    │   │   │           └── loginPage.css
+    │   │   └── README.MD
+    │   └── ClassWork
+    │       ├── EmployeeDetails.html
+    │       ├── ShoppingHome.html
+    │       └── media
+    │           └── images
+    │               ├── employee1.jpg
+    │               ├── employee2.jpg
+    │               └── employee3.jpg
     ├── LICENSE
     └── README.md
 ```
