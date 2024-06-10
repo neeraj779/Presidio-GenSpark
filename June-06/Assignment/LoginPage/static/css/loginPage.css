@@ -87,3 +87,15 @@ a {
 .input-container input {
     padding-left: 30px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .input-container {
+        width: 100%;
+    }
+}
