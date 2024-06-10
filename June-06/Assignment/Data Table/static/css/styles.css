@@ -1,0 +1,114 @@
+.sort-icon {
+    color: gray;
+    position: absolute;
+    font-size: 12px;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.table-header th {
+    font-weight: 500;
+    font-size: 14px;
+    color: gray;
+    background-color: rgb(247, 249, 253) !important;
+}
+
+.status-label {
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    padding: 0 10px;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.status-open {
+    background-color: rgb(240, 241, 250);
+    color: rgb(79, 90, 237);
+}
+
+.status-paid {
+    background-color: rgb(225, 252, 239);
+    color: green;
+}
+
+.status-due {
+    background-color: rgb(250, 240, 243);
+    color: red;
+}
+
+.status-inactive {
+    background-color: rgb(233, 237, 245);
+    color: gray;
+}
+
+.balance-negative {
+    color: red;
+}
+
+.balance-positive {
+    color: green;
+}
+
+.header-container {
+    background-color: rgb(247, 249, 253);
+    display: flex;
+    padding: 20px;
+}
+
+.filter-container {
+    flex: 5%;
+    margin-left: 1%;
+}
+
+.filter-button {
+    background-color: white;
+    color: rgb(70, 79, 96);
+    box-shadow: 0px 0px 1px 1px gray;
+}
+
+.search-container {
+    flex: 15%;
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px gray;
+    height: 40px;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+
+.search-icon i {
+    padding-top: 11px;
+    color: gray;
+}
+
+.search-icon {
+    flex: 5%;
+}
+
+.search-input {
+    flex: 95%;
+    width: 400px;
+}
+
+input {
+    border: transparent !important;
+    color: gray !important;
+}
+
+.add-customer-container {
+    flex: 80%;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 3px;
+}
+
+.add-customer-button {
+    width: 170px;
+}
