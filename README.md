@@ -965,9 +965,15 @@
     │           └── index.css
     ├── June-06
     │   ├── Assignment
+    │   │   ├── Data Table
+    │   │   │   ├── DataTable.html
+    │   │   │   ├── output-desktop.png
+    │   │   │   ├── output-mobile.png
+    │   │   │   └── static
+    │   │   │       └── css
+    │   │   │           └── styles.css
     │   │   ├── Gmail UI
     │   │   │   ├── Gmail_UI.html
-    │   │   │   ├── Output.png
     │   │   │   ├── assets
     │   │   │   │   └── img
     │   │   │   │       ├── bg.png
@@ -975,20 +981,23 @@
     │   │   │   │       ├── phone2.png
     │   │   │   │       ├── phone3.png
     │   │   │   │       └── phone4.png
+    │   │   │   ├── output-desktop.png
+    │   │   │   ├── output-mobile.png
     │   │   │   └── static
     │   │   │       └── css
     │   │   │           └── gmail_ui.css
     │   │   ├── LoginPage
-    │   │   │   ├── Output.png
     │   │   │   ├── assets
     │   │   │   │   └── img
     │   │   │   │       ├── bg.png
     │   │   │   │       └── logo.png
     │   │   │   ├── loginPage.html
+    │   │   │   ├── output-desktop.png
+    │   │   │   ├── output-mobile.png
     │   │   │   └── static
     │   │   │       └── css
     │   │   │           └── loginPage.css
-    │   │   └── README.MD
+    │   │   └── README.md
     │   └── ClassWork
     │       ├── EmployeeDetails.html
     │       ├── ShoppingHome.html
@@ -997,6 +1006,16 @@
     │               ├── employee1.jpg
     │               ├── employee2.jpg
     │               └── employee3.jpg
+    ├── June-10
+    │   └── ClassWork
+    │       ├── index.html
+    │       └── static
+    │           ├── css
+    │           │   ├── style.css
+    │           │   └── style.css.map
+    │           └── scss
+    │               ├── colorvars.scss
+    │               └── style.scss
     ├── LICENSE
     └── README.md
 ```
