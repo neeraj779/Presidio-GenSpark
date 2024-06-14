@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        font-weight: 600;
+      }
+      .form-control {
+        border-radius: 4px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .error {
+        color: red;
+        font-size: 0.875em;
+      }
+      .valid-input {
+        border-color: green;
+        box-shadow: 0 0 6px green;
+      }
+      .invalid-input {
+        border-color: red;
+        box-shadow: 0 0 6px red;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            onblur="validateName()"
+          />
+          <div class="error" id="nameError"></div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            onblur="validatePhone()"
+          />
+          <div class="error" id="phoneError"></div>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input
+            type="date"
+            class="form-control"
+            id="dob"
+            name="dob"
+            onblur="validateDOB()"
+            onchange="calculateAge()"
+          />
+          <div class="error" id="dobError"></div>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="text"
+            class="form-control"
+            id="age"
+            name="age"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            onblur="validateEmail()"
+          />
+          <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+          <label>Gender</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+              onblur="validateGender()"
+            />
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+              onblur="validateGender()"
+            />
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+          <div class="error" id="genderError"></div>
+        </div>
+        <div class="form-group">
+          <label>Qualification</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="qualification"
+              id="bachelor"
+              value="Bachelor"
+              onblur="validateQualification()"
+            />
+            <label class="form-check-label" for="bachelor">Bachelor</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="qualification"
+              id="master"
+              value="Master"
+              onblur="validateQualification()"
+            />
+            <label class="form-check-label" for="master">Master</label>
+          </div>
+          <div class="error" id="qualificationError"></div>
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession</label>
+          <input
+            type="text"
+            class="form-control"
+            list="professionList"
+            id="profession"
+            name="profession"
+            onblur="validateProfession()"
+          />
+          <datalist id="professionList"> </datalist>
+          <div class="error" id="professionError"></div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="validateForm()">
+          Submit
+        </button>
+        <div class="error" id="formError"></div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
