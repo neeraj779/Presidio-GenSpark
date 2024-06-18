@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#divTodo").click(() => {
+          alert("Div Clicked");
+        });
+        $("#btnClick").click(() => {
+          // $('.clsData').css('background-color','yellow');
+          // $('.clsData').html('<h2>Changed</h2>');
+          $(".clsData").toggle(1000, () => {
+            alert("Toggle Completed");
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+
+    <div id="divTodo">click me to see what happens</div>
+    <button id="btnClick">Click Me</button>
+    <div class="clsData">
+      <h2>Todo List</h2>
+      <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+        <li>Task 5</li>
+      </ul>
+    </div>
+  </body>
+</html>
