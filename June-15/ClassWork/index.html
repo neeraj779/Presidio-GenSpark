@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <script>
+        var clickButton = ()=>{
+            fetch('https://dummyjson.com/posts', {
+                method: 'GET',
+            }).then(async (response) => {
+                var data = await response.json();
+                console.log(data.posts[0]);
+            }).catch(error => {
+                console.error(error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Product Details</h1>
+    <input type="file" id="fileInput" name="fileInput">
+    <button onclick="clickButton()">Click Me</button>
+
+</body>
+</html>

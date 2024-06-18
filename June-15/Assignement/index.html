@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <div class="container" id="productContainer"></div>
+    <script>
+      async function fetchProducts() {
+        const response = await fetch("https://dummyjson.com/products");
+        const data = await response.json();
+        return data.products;
+      }
+
+      function createProductCard(product) {
+        const productCard = document.createElement("div");
+        productCard.classList.add("product-card");
+
+        productCard.innerHTML = `
+                <img src="${product.thumbnail}" alt="${product.title}">
+                <h2 class="product-title">${product.title}</h2>
+                <p class="product-price">$${product.price}</p>
+                <p class="product-description">${product.description}</p>
+                <p class="product-rating">Rating: ${product.rating}</p>
+                <p class="availability">${product.availabilityStatus}</p>
+            `;
+
+        return productCard;
+      }
+
+      async function displayProducts() {
+        const products = await fetchProducts();
+        const productContainer = document.getElementById("productContainer");
+
+        products.forEach((product) => {
+          const productCard = createProductCard(product);
+          productContainer.appendChild(productCard);
+        });
+      }
+
+      displayProducts();
+    </script>
+  </body>
+</html>
