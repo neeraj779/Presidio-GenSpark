@@ -33,12 +33,6 @@ async function fetchAllQuotes() {
   }
 }
 
-function getCurrentPageQuotes() {
-  const startIndex = (currentPage - 1) * quotesPerPage;
-  const endIndex = startIndex + quotesPerPage;
-  return allQuotes.slice(startIndex, endIndex);
-}
-
 function displayQuotes(quotes) {
   const container = document.getElementById("quotes-container");
   container.innerHTML = "";
@@ -52,12 +46,22 @@ function displayQuotes(quotes) {
     container.appendChild(quoteCard);
   });
 
+  updatePaginationButtons();
+}
+
+function updatePaginationButtons() {
   document
     .getElementById("prev-btn")
     .classList.toggle("disabled-btn", currentPage === 1);
   document
     .getElementById("next-btn")
     .classList.toggle("disabled-btn", currentPage === totalPages);
+}
+
+function getCurrentPageQuotes() {
+  const startIndex = (currentPage - 1) * quotesPerPage;
+  const endIndex = startIndex + quotesPerPage;
+  return allQuotes.slice(startIndex, endIndex);
 }
 
 function nextPage() {
@@ -88,6 +92,24 @@ function searchByAuthor() {
   );
   currentPage = 1;
   displayQuotes(filteredQuotes);
+}
+
+function sortQuotesByAuthor(ascending = true) {
+  allQuotes.sort((a, b) => {
+    const authorA = a.author.toLowerCase();
+    const authorB = b.author.toLowerCase();
+    if (ascending) {
+      return authorA.localeCompare(authorB);
+    } else {
+      return authorB.localeCompare(authorA);
+    }
+  });
+}
+
+function sortAndDisplay(ascending) {
+  sortQuotesByAuthor(ascending);
+  currentPage = 1;
+  displayQuotes(getCurrentPageQuotes());
 }
 
 fetchAllQuotes();

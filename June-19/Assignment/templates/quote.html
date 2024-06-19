@@ -60,6 +60,22 @@
           Search
         </button>
       </div>
+
+      <div class="sort">
+        <button
+          class="btn btn-outline-secondary"
+          onclick="sortAndDisplay(true)"
+        >
+          <i class="fas fa-sort-alpha-up"></i>
+        </button>
+        <button
+          class="btn btn-outline-secondary"
+          onclick="sortAndDisplay(false)"
+        >
+          <i class="fas fa-sort-alpha-down-alt"></i>
+        </button>
+      </div>
+
       <div id="quotes-container"></div>
       <div class="navigation">
         <button class="Btn" id="prev-btn" onclick="prevPage()">
