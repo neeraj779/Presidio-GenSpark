@@ -1047,6 +1047,21 @@
     │   ├── PutMethod.html
     │   ├── index.html
     │   └── jQuery.html
+    ├── June-19
+    │   ├── Assignment
+    │   │   ├── assets
+    │   │   │   └── img
+    │   │   │       ├── HomePage.png
+    │   │   │       └── QuotePage.png
+    │   │   ├── index.html
+    │   │   ├── static
+    │   │   │   ├── css
+    │   │   │   │   └── style.css
+    │   │   │   └── js
+    │   │   │       └── script.js
+    │   │   └── templates
+    │   │       └── quote.html
+    │   └── README.md
     ├── LICENSE
     └── README.md
 ```
