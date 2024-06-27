@@ -1093,6 +1093,47 @@
     │       ├── Inheritance.js
     │       ├── Objects.js
     │       └── Polymorphism.js
+    ├── June-27
+    │   ├── Assignment
+    │   │   ├── 01_print_hello_world.py
+    │   │   ├── 02_print_greet.py
+    │   │   ├── 03_print_greet_with_salutation.py
+    │   │   ├── 04_print_personal_details.py
+    │   │   ├── 05_print_validated_personal_details.py
+    │   │   ├── 06_check_prime_number.py
+    │   │   ├── 07_average_of_primes.py
+    │   │   ├── 08_calculate_string_length.py
+    │   │   ├── 09_find_permutations.py
+    │   │   └── 10_print_pyramid.py
+    │   └── Day-01_Python_Learning
+    │       ├── 01_Initial_Setup
+    │       │   └── README.md
+    │       ├── 02_IDE_Selection
+    │       │   └── README.md
+    │       ├── 03_Understanding_Execution
+    │       │   ├── README.md
+    │       │   └── execution_examples.py
+    │       ├── 04_Input_Output
+    │       │   ├── README.md
+    │       │   └── input_output_examples.py
+    │       ├── 05_Datatypes
+    │       │   ├── README.md
+    │       │   └── datatypes_examples.py
+    │       ├── 06_Operators
+    │       │   ├── README.md
+    │       │   └── operators_examples.py
+    │       ├── 07_Conditional_Statements
+    │       │   ├── README.md
+    │       │   └── conditional_statements_examples.py
+    │       ├── 08_Iterations
+    │       │   ├── README.md
+    │       │   └── iterations_examples.py
+    │       ├── 09_Methods
+    │       │   ├── README.md
+    │       │   └── methods_examples.py
+    │       └── 10_List_and_Indexing
+    │           ├── README.md
+    │           └── list_and_indexing_examples.py
     ├── LICENSE
     └── README.md
 ```
