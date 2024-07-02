@@ -1007,18 +1007,16 @@
     │               ├── employee2.jpg
     │               └── employee3.jpg
     ├── June-10
-    │   └── ClassWork
-    │       ├── index.html
-    │       └── static
-    │           ├── css
-    │           │   ├── style.css
-    │           │   └── style.css.map
-    │           └── scss
-    │               ├── colorvars.scss
-    │               └── style.scss
+    │   ├── index.html
+    │   └── static
+    │       ├── css
+    │       │   ├── style.css
+    │       │   └── style.css.map
+    │       └── scss
+    │           ├── colorvars.scss
+    │           └── style.scss
     ├── June-11
-    │   └── ClassWork
-    │       └── index.html
+    │   └── index.html
     ├── June-12
     │   ├── dom.html
     │   ├── dom.js
@@ -1135,6 +1133,13 @@
     │       └── 10_List_and_Indexing
     │           ├── README.md
     │           └── list_and_indexing_examples.py
+    ├── Python-02-June-28
+    │   ├── 01-longest-substring-without-repeating-characters.py
+    │   ├── 02-prime_numbers_up_to_n.py
+    │   ├── 03-top_10_players.py
+    │   ├── 04-cow_and_bull_game.py
+    │   ├── 05-credit_card_validation.py
+    │   └── README.md
     ├── Python-03-July-01
     │   ├── Assignment
     │   │   ├── employee_management.py
@@ -1159,5 +1164,29 @@
     │       └── Polymorphism_in_Python
     │           ├── Polymorphism_using_method_overloading.py
     │           └── Polymorphism_using_method_overriding.py
+    ├── Python-04-July-02
+    │   ├── Part-A
+    │   │   └── python_basic certificate.pdf
+    │   ├── Part-B
+    │   │   ├── collections-counter.py
+    │   │   ├── find-second-maximum-number-in-a-list.py
+    │   │   ├── list-comprehensions.py
+    │   │   ├── most-commons.py
+    │   │   ├── py-if-else.py
+    │   │   ├── python-arithmetic-operators.py
+    │   │   ├── python-division.py
+    │   │   ├── python-loops.py
+    │   │   ├── python-print.py
+    │   │   └── write-a-function.py
+    │   └── Part-C
+    │       ├── 3sum-closest.py
+    │       ├── generate-parentheses.py
+    │       ├── group-anagrams.py
+    │       ├── jump-game.py
+    │       ├── longest-substring-without-repeating-characters.py
+    │       ├── multiply-strings.py
+    │       ├── text-justification.py
+    │       ├── unique-paths.py
+    │       └── zigzag-conversion.py
     └── README.md
 ```
