@@ -932,6 +932,22 @@
     │       ├── EmployeeRepositoryTest.cs
     │       ├── RequestTrackerTest.csproj
     │       └── TokenServiceTest.cs
+    ├── July-03
+    │   ├── Assignment
+    │   │   ├── find-a-string.py
+    │   │   ├── finding-the-percentage.py
+    │   │   ├── nested-list.py
+    │   │   ├── python-lists.py
+    │   │   ├── python-mutations.py
+    │   │   ├── python-string-split-and-join.py
+    │   │   ├── python-tuples.py
+    │   │   ├── string-validators.py
+    │   │   ├── swap-case.py
+    │   │   └── whats-your-name.py
+    │   └── ClassWork
+    │       ├── Dockerfile
+    │       ├── app.js
+    │       └── package.json
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
