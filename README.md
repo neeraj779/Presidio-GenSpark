@@ -968,6 +968,31 @@
     │       ├── WeatherForecast.cs
     │       ├── appsettings.Development.json
     │       └── appsettings.json
+    ├── July-05
+    │   ├── Assignment
+    │   │   ├── Dockerfile
+    │   │   └── main.py
+    │   └── ClassWork
+    │       └── ShopAPI
+    │           ├── .dockerignore
+    │           ├── Controllers
+    │           │   └── WeatherForecastController.cs
+    │           ├── Dockerfile
+    │           ├── Migrations
+    │           │   ├── 20240705064636_initial.Designer.cs
+    │           │   ├── 20240705064636_initial.cs
+    │           │   └── ShopContextModelSnapshot.cs
+    │           ├── Models
+    │           │   ├── Product.cs
+    │           │   └── ShopContext.cs
+    │           ├── Program.cs
+    │           ├── Properties
+    │           │   └── launchSettings.json
+    │           ├── ShopAPI.csproj
+    │           ├── ShopAPI.sln
+    │           ├── WeatherForecast.cs
+    │           ├── appsettings.Development.json
+    │           └── appsettings.json
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
