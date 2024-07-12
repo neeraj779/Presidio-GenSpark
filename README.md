@@ -1000,6 +1000,94 @@
     │   ├── Bank-FD SD.drawio.svg
     │   ├── Bank-Loans SD.drawio.svg
     │   └── Bank-RD SD.drawio.svg
+    ├── July-12
+    │   ├── ATM-Application-Backend
+    │   │   ├── ATMApplication
+    │   │   │   ├── ATMApplication.csproj
+    │   │   │   ├── Controllers
+    │   │   │   │   ├── AuthenticationController.cs
+    │   │   │   │   └── TransactionController.cs
+    │   │   │   ├── Exceptions
+    │   │   │   │   ├── DepositAmoutExceedExption.cs
+    │   │   │   │   ├── EntityNotFoundException.cs
+    │   │   │   │   ├── InvalidCredentialsException.cs
+    │   │   │   │   └── NoEntitiesFoundException.cs
+    │   │   │   ├── Migrations
+    │   │   │   │   ├── 20240712062206_initial.Designer.cs
+    │   │   │   │   ├── 20240712062206_initial.cs
+    │   │   │   │   └── ATMContextModelSnapshot.cs
+    │   │   │   ├── Models
+    │   │   │   │   ├── ATMContext.cs
+    │   │   │   │   ├── Account.cs
+    │   │   │   │   ├── Card.cs
+    │   │   │   │   ├── Customer.cs
+    │   │   │   │   ├── DTOs
+    │   │   │   │   │   ├── AuthenticationDTO.cs
+    │   │   │   │   │   ├── DepositDTO.cs
+    │   │   │   │   │   ├── DepositReturnDTO.cs
+    │   │   │   │   │   ├── ReturnTransactionDTO.cs
+    │   │   │   │   │   └── WithdrawalDTO.cs
+    │   │   │   │   ├── ErrorModel.cs
+    │   │   │   │   ├── Transaction.cs
+    │   │   │   │   └── TransactionTypeEnum.cs
+    │   │   │   ├── Program.cs
+    │   │   │   ├── Properties
+    │   │   │   │   └── launchSettings.json
+    │   │   │   ├── Repositories
+    │   │   │   │   ├── AbstractRepositoryClass.cs
+    │   │   │   │   ├── AccountRepository.cs
+    │   │   │   │   ├── CardRepository.cs
+    │   │   │   │   ├── CustomerRepository.cs
+    │   │   │   │   ├── IRepository.cs
+    │   │   │   │   └── TransactionRepository.cs
+    │   │   │   ├── Services
+    │   │   │   │   ├── AuthenticationService.cs
+    │   │   │   │   ├── IAuthenticationService.cs
+    │   │   │   │   ├── ITransactionService.cs
+    │   │   │   │   └── TransactionService.cs
+    │   │   │   ├── appsettings.Development.json
+    │   │   │   └── appsettings.json
+    │   │   ├── ATMTest
+    │   │   │   ├── ATMTest.csproj
+    │   │   │   ├── Repositories
+    │   │   │   │   ├── AccountRepositoryTest.cs
+    │   │   │   │   ├── CardRepositoryTest.cs
+    │   │   │   │   └── TransactionRepositoryTest.cs
+    │   │   │   └── Services
+    │   │   │       ├── AuthenticationServiceTest.cs
+    │   │   │       └── TransactionServiceTest.cs
+    │   │   └── solnATM.sln
+    │   ├── ATM-Application-Frontend
+    │   │   ├── assets
+    │   │   │   ├── gif
+    │   │   │   │   ├── money.webp
+    │   │   │   │   └── moneyOut.webp
+    │   │   │   └── svg
+    │   │   │       └── login.svg
+    │   │   ├── index.html
+    │   │   ├── static
+    │   │   │   ├── css
+    │   │   │   │   ├── common.css
+    │   │   │   │   ├── home.css
+    │   │   │   │   ├── login.css
+    │   │   │   │   ├── mini-statement.css
+    │   │   │   │   └── withdraw.css
+    │   │   │   └── js
+    │   │   │       ├── auth.js
+    │   │   │       ├── common.js
+    │   │   │       ├── deposit.js
+    │   │   │       ├── login.js
+    │   │   │       ├── mini-statement.js
+    │   │   │       ├── validation.js
+    │   │   │       └── withdraw.js
+    │   │   └── templates
+    │   │       ├── deposit.html
+    │   │       ├── login.html
+    │   │       ├── mini-statement.html
+    │   │       └── withdraw.html
+    │   ├── README.md
+    │   └── assets
+    │       └── ATM-Application-Demo-Video.mp4
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
