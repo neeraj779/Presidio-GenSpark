@@ -1,0 +1,56 @@
+.navbar {
+    background: #11101d !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.waviy span {
+    display: inline-block;
+    animation: waviy 1.7s;
+    animation-delay: calc(.1s * var(--i))
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+.heading {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 27px;
+    color: #888888;
+    font-size: 60px;
+}
+
+.overlay_title {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.text-gradient {
+    background: rgb(123, 6, 249);
+    background: linear-gradient(90deg, rgba(123, 6, 249, 1) 32%, rgba(223, 18, 162, 1) 100%);
+    background-clip: None;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

@@ -1,0 +1,111 @@
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.container {
+    max-width: 90vw;
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(194, 251, 215);
+    background: linear-gradient(90deg,
+            rgba(194, 251, 215, 1) 0%,
+            rgba(194, 251, 215, 1) 0%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.withdraw-button {
+    display: block;
+    margin: auto;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: rgb(103, 92, 156);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.withdraw-button svg {
+    margin-right: 8px;
+    width: 25px;
+}
+
+.withdraw-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.withdraw-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.withdraw-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.withdraw-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+}
+
+.withdraw-button:hover::before,
+.withdraw-button:hover::after {
+    height: 60%;
+}
+
+.swal2-close:focus {
+    box-shadow: none !important;
+}
+
+.btn-disabled {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .withdraw-button {
+        margin-top: 12px;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
