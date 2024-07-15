@@ -1088,6 +1088,13 @@
     │   ├── README.md
     │   └── assets
     │       └── ATM-Application-Demo-Video.mp4
+    ├── July-15
+    │   ├── index.html
+    │   └── statics
+    │       ├── css
+    │       │   └── style.css
+    │       └── js
+    │           └── script.js
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
