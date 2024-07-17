@@ -1095,6 +1095,41 @@
     │       │   └── style.css
     │       └── js
     │           └── script.js
+    ├── July-17
+    │   └── ProductAPI.Core
+    │       ├── .dockerignore
+    │       ├── Contexts
+    │       │   └── ProductAPIContext.cs
+    │       ├── Controllers
+    │       │   └── ProductController.cs
+    │       ├── Dockerfile
+    │       ├── Exceptions
+    │       │   └── NoProductsFoundException.cs
+    │       ├── Interfaces
+    │       │   ├── IProductServices.cs
+    │       │   └── IRepository.cs
+    │       ├── Migrations
+    │       │   ├── 20240717084946_initial.Designer.cs
+    │       │   ├── 20240717084946_initial.cs
+    │       │   └── ProductAPIContextModelSnapshot.cs
+    │       ├── Models
+    │       │   ├── DBModels
+    │       │   │   └── Product.cs
+    │       │   └── DTOs
+    │       │       └── ProductDTO.cs
+    │       ├── ProductAPI.Core.csproj
+    │       ├── ProductAPI.Core.sln
+    │       ├── Program.cs
+    │       ├── Properties
+    │       │   └── launchSettings.json
+    │       ├── Repository
+    │       │   └── ProductRepository.cs
+    │       ├── Services
+    │       │   └── ProductSevices.cs
+    │       ├── appsettings.Development.json
+    │       ├── appsettings.json
+    │       └── utils
+    │           └── AzureUtils.cs
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
