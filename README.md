@@ -1130,6 +1130,14 @@
     │       ├── appsettings.json
     │       └── utils
     │           └── AzureUtils.cs
+    ├── July-18
+    │   ├── Assignment
+    │   │   ├── keyvault-template.json
+    │   │   └── sql-server-template.json
+    │   └── ClassWork
+    │       ├── azure_template.json
+    │       ├── azure_template_parameters.json
+    │       └── commands.md
     ├── June-03
     │   ├── Resume.html
     │   ├── index.html
